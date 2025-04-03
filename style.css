@@ -123,15 +123,19 @@ footer {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 80%; /* Přidání šířky pro lepší kontrolu */
-    max-width: 600px; /* Maximální šířka pro větší obrazovky */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    min-height: 200px;
 }
 
 .matematicky-vyraz p {
     font-size: 1.2em;
     color: #333;
     line-height: 1.6;
+    text-align: center;
 }
 
 .cervena {
