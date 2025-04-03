@@ -99,8 +99,8 @@ footer {
 /* Styly pro roky jako tlačítka */
 .rok-container {
     display: flex;
-    justify-content: center; /* Centrování tlačítek */
-    margin-bottom: 20px; /* Přidání mezery pod tlačítka */
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .rok-tlacitko {
@@ -118,11 +118,12 @@ footer {
     background-color: #f0f0f0;
 }
 
+/* Úprava pro zobrazení matematického výrazu */
 .body1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Změna na min-height pro lepší responzivitu */
 }
 
 .matematicky-vyraz {
@@ -131,10 +132,25 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 80%; /* Přidání šířky pro lepší kontrolu */
+    max-width: 600px; /* Maximální šířka pro větší obrazovky */
 }
 
 .matematicky-vyraz p {
     font-size: 1.2em;
     color: #333;
     line-height: 1.6;
+}
+
+.cervena {
+    color: red;
+    text-decoration: line-through;
+}
+.modra {
+    color: blue;
+    text-decoration: line-through;
+}
+.zelena {
+    color: green;
+    text-decoration: line-through;
 }
