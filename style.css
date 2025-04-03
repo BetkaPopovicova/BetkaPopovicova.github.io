@@ -117,3 +117,24 @@ footer {
 .rok-tlacitko:hover {
     background-color: #f0f0f0;
 }
+
+.body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.matematicky-vyraz {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.matematicky-vyraz p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
