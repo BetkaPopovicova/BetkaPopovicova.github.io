@@ -6,11 +6,20 @@
     <title>Zlomky 2024</title>
     <link rel="stylesheet" href="style.css">
     <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        }
-      };
+        MathJax = {
+            tex: { inlineMath: [['$', '$']] },
+            startup: {
+                pageReady: () => {
+                    MathJax.startup.defaultReady();
+                    const HTMLdel = MathJax.outputJax["CHTML"].addElement("mjx-del", "del", {
+                        "data-color": "red" // Výchozí barva
+                    });
+                    HTMLdel.style.textDecoration = "line-through";
+                    HTMLdel.style.color = MathJax.config.delColor || "red"; // Použijeme data-color nebo výchozí barvu
+                    MathJax.config.delColor = "red"; // Nastavíme výchozí barvu
+                }
+            }
+        };
     </script>
     <script id="MathJax-script" async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
@@ -38,7 +47,7 @@
                         <p>
                             
                             <p>
-                                $\frac{&lt;svg width="20" height="10" style="position: relative; top: -5px;"&gt;<line x1="0" y1="0" x2="20" y2="10" stroke="red" stroke-width="4"/>&gt;2}{1} \times \frac{2}{&lt;svg width="20" height="10" style="position: relative; top: -5px;"&gt;<line x1="0" y1="0" x2="20" y2="10" stroke="blue" stroke-width="4"/>&gt;3} \times \frac{&lt;svg width="20" height="10" style="position: relative; top: -5px;"&gt;<line x1="0" y1="0" x2="20" y2="10" stroke="red" stroke-width="4"/>&gt;2}{1} + \frac{5}{&lt;svg width="20" height="10" style="position: relative; top: -5px;"&gt;<line x1="0" y1="0" x2="20" y2="10" stroke="green" stroke-width="4"/>&gt;6} \times \frac{&lt;svg width="20" height="10" style="position: relative; top: -5px;"&gt;<line x1="0" y1="0" x2="20" y2="10" stroke="green" stroke-width="4"/>&gt;4}{3} \times \frac{3}{&lt;svg width="20" height="10" style="position: relative; top: -5px;"&gt;<line x1="0" y1="0" x2="20" y2="10" stroke="blue" stroke-width="4"/>&gt;2}$
+                                $\frac{<del data-color="red">2</del>}{1} \times \frac{2}{<del data-color="blue">3</del>} \times \frac{<del data-color="red">2</del>}{1} + \frac{5}{<del data-color="green">6</del>} \times \frac{<del data-color="green">4</del>}{3} \times \frac{3}{<del data-color="blue">2</del>}$
                             </p>                              
                         </p>
                     </div>
