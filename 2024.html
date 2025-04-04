@@ -29,6 +29,13 @@
                             slozenyZlomek.style.fontSize = '1.4em';
                             slozenyZlomek.parentElement.style.minWidth = '500px';
                             slozenyZlomek.parentElement.style.minHeight = '250px';
+
+                            // Přidáme styl pro zvětšení zlomku v MathJaxu
+                            MathJax.typesetPromise([slozenyZlomek]).then(() => {
+                                slozenyZlomek.querySelectorAll('mjx-mfrac').forEach(mfrac => {
+                                    mfrac.style.fontSize = '1.4em';
+                                });
+                            });
                         }
                     }
                 }
