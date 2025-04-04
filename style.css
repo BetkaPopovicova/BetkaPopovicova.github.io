@@ -148,3 +148,28 @@ footer {
 .zelena {
     color: green;
 }
+
+/* Styly pro tlačítko "Zobraz řešení" */
+.matematicky-vyraz button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.matematicky-vyraz button:hover {
+    background-color: #45a049;
+}
+
+/* Styly pro rozbalovací řešení */
+.matematicky-vyraz #reseni {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    width: 100%;
+}
