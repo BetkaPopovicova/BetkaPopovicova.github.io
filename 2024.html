@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zlomky 2024</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        MathJax = {
-            tex: { inlineMath: [['$', '$']] },
-            startup: {
-                pageReady: () => {
-                    MathJax.startup.defaultReady();
-                    const HTMLdel = MathJax.outputJax["CHTML"].addElement("mjx-del", "del", {
-                        "data-color": "red" // Výchozí barva
-                    });
-                    HTMLdel.style.textDecoration = "line-through";
-                    HTMLdel.style.color = MathJax.config.delColor || "red"; // Použijeme data-color nebo výchozí barvu
-                    MathJax.config.delColor = "red"; // Nastavíme výchozí barvu
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zlomky 2024</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [['$', '$']],
+                    packages: ['base', 'cancel']
                 }
-            }
-        };
-    </script>
-    <script id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-    </script>
-</head>
+            };
+        </script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+    </head>
 <body>
     <header>
         <h1>Zlomky z roku 2024</h1>
@@ -47,7 +39,7 @@
                         <p>
                             
                             <p>
-                                $\frac{<del data-color="red">2</del>}{1} \times \frac{2}{<del data-color="blue">3</del>} \times \frac{<del data-color="red">2</del>}{1} + \frac{5}{<del data-color="green">6</del>} \times \frac{<del data-color="green">4</del>}{3} \times \frac{3}{<del data-color="blue">2</del>}$
+                                $\frac{\cancel{\textcolor{red}{2}}}{1} \times \frac{2}{\cancel{\textcolor{blue}{3}}} \times \frac{\cancel{\textcolor{red}{2}}}{1} + \frac{5}{\cancel{\textcolor{green}{6}}} \times \frac{\cancel{\textcolor{green}{4}}}{3} \times \frac{3}{\cancel{\textcolor{blue}{2}}}$
                             </p>                              
                         </p>
                     </div>
