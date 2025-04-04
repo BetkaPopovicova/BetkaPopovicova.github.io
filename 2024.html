@@ -17,16 +17,16 @@
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
     </script>
     <script>
-        function zobrazReseni() {
-            var reseni = document.getElementById("reseni");
-            var zobrazReseniButton = document.getElementById("zobrazReseniButton"); // Získání tlačítka
+        function zobrazReseni(reseniId, zobrazReseniButtonId) {
+            var reseni = document.getElementById(reseniId);
+            var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
 
             if (reseni.style.display === "none") {
                 reseni.style.display = "block";
-                zobrazReseniButton.textContent = "Skrýt řešení"; // Změna textu tlačítka
+                zobrazReseniButton.textContent = "Skrýt řešení";
             } else {
                 reseni.style.display = "none";
-                zobrazReseniButton.textContent = "Zobraz řešení"; // Změna textu tlačítka
+                zobrazReseniButton.textContent = "Zobraz řešení";
             }
         }
         function zobrazVideoReseni() {
@@ -51,10 +51,10 @@
                 $\left( 2 : \frac{3}{2} \right) : \frac{1}{2} + \left( \frac{5}{6} : \frac{3}{4} \right) : \frac{2}{3}$
             </p>
             <div class="button-container">
-                <button id="zobrazReseniButton" onclick="zobrazReseni()">Zobraz řešení</button>
+                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
                 <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
             </div>
-            <div id="reseni" style="display: none;">
+            <div id="reseni1" style="display: none;">
                 <br>
                 <p>
                     $ = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{2}{1} + \frac{5}{6} \cdot \frac{4}{3} \cdot \frac{3}{2}$
@@ -73,6 +73,27 @@
                 </p>
                 <p>
                     $ = \frac{8}{3} + \frac{5}{3} = \frac{8 \, + \, 5}{3} = \frac{13}{3} $
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p>
+                $\frac{\frac{13}{10} - 1,4}{\frac{2}{15} + \frac{1}{6}}$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni2" style="display: none;">
+                <br>
+                <p>
+                    $\frac{\frac{13}{10} - \frac{14}{10}}{\frac{4 \, + \, 5}{30}}$
+                </p>
+                <p>
+                    $\frac{\frac{-1}{10}}{\frac{9}{30}}$
+                </p>
+                <p>
+                    $\frac{\frac{-1}{10}}{\frac{3}{10}}$  
                 </p>
             </div>
         </div>
