@@ -136,7 +136,7 @@ footer {
     color: #333;
     line-height: 1.6;
     text-align: center;
-    width: 100%; /* Přidáno pro zobrazení každého odstavce na novém řádku */
+    width: 100%;
 }
 
 .cervena {
@@ -150,12 +150,6 @@ footer {
 }
 
 /* Styly pro tlačítka v matematickém výrazu */
-.matematicky-vyraz {
-    display: flex; /* Použijeme flexbox pro rozložení prvků */
-    flex-direction: column; /* Uspořádáme prvky do sloupce */
-    align-items: center; /* Vycentrujeme prvky horizontálně */
-}
-
 .matematicky-vyraz button {
     padding: 12px 25px;
     background-color: #4CAF50;
@@ -168,15 +162,10 @@ footer {
     margin: 10px 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block; /* Zobrazíme tlačítka vedle sebe */
+    display: inline-block;
 }
 
-.matematicky-vyraz button:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);
-}
-
-.matematicky-vyraz button:active {
-    transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.matematicky-vyraz .button-container { /* Vytvoříme kontejner pro tlačítka */
+    display: flex; /* Použijeme flexbox pro tlačítka */
+    justify-content: center; /* Vycentrujeme tlačítka horizontálně */
 }
