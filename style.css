@@ -124,11 +124,11 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Změna na sloupec pro rozdělení na řádky */
-    align-items: center; /* Vycentrování na střed */
+    flex-direction: column;
+    align-items: center;
     width: 80%;
     max-width: 600px;
-    margin: 20px auto; /* Přidáno auto pro vycentrování na střed */
+    margin: 20px auto;
 }
 
 .matematicky-vyraz p {
@@ -136,7 +136,7 @@ footer {
     color: #333;
     line-height: 1.6;
     text-align: center;
-    width: 100%; /* Zajištění, aby každý odstavec zabíral celý řádek */
+    width: 100%; /* Přidáno pro zobrazení každého odstavce na novém řádku */
 }
 
 .cervena {
