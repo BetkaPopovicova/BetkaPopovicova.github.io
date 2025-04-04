@@ -159,10 +159,10 @@ footer {
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
-    margin: 10px 5px; /* Přidána mezera mezi tlačítky */
+    margin: 10px 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block; /* Zobrazení tlačítek vedle sebe */
+    display: inline-block;
 }
 
 .matematicky-vyraz button:hover {
