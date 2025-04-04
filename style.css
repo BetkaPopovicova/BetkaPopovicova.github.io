@@ -117,7 +117,7 @@ footer {
     background-color: #f0f0f0;
 }
 
-/* Styly pro tlačítka v matematickém výrazu */
+/* Styly pro matematické výrazy */
 .matematicky-vyraz {
     background-color: white;
     padding: 20px;
@@ -128,8 +128,6 @@ footer {
     align-items: center;
     width: 80%;
     max-width: 600px;
-    min-width: 400px;
-    min-height: 200px;
     margin: 20px auto;
 }
 
@@ -139,22 +137,23 @@ footer {
     line-height: 1.6;
     text-align: center;
     width: 100%;
-    font-size: 1.2em;
 }
 
 .cervena {
     color: red;
 }
+
 .modra {
     color: blue;
 }
+
 .zelena {
     color: green;
 }
 
-.matematicky-vyraz .button-container { /* Vytvoříme kontejner pro tlačítka */
-    display: flex; /* Použijeme flexbox pro tlačítka */
-    justify-content: center; /* Vycentrujeme tlačítka horizontálně */
+.matematicky-vyraz .button-container {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -180,4 +179,14 @@ footer {
 .matematicky-vyraz button:active {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styly pro složené zlomky */
+.slozeny-zlomek {
+    min-width: 500px;
+    min-height: 250px;
+}
+
+.slozeny-zlomek p {
+    font-size: 1.4em;
 }
