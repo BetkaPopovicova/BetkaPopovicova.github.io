@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Vložíme MathJax skript dříve
+            (function() {
+                var script = document.createElement('script');
+                script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js';
+                script.async = true;
+                document.head.appendChild(script);
+            })();
+
+            // Nastavíme MathJax a aplikujeme styly po načtení MathJax
             MathJax = {
                 tex: {
                     inlineMath: [['$', '$']],
@@ -24,12 +33,6 @@
                     }
                 }
             };
-            (function() {
-                var script = document.createElement('script');
-                script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js';
-                script.async = true;
-                document.head.appendChild(script);
-            })();
         });
 
         function zobrazReseni(reseniId, zobrazReseniButtonId) {
@@ -44,6 +47,7 @@
                 zobrazReseniButton.textContent = "Zobraz řešení";
             }
         }
+
         function zobrazVideoReseni() {
             alert("Video řešení bude brzy dostupné.");
         }
