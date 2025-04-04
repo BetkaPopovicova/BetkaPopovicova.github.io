@@ -183,10 +183,10 @@ footer {
 
 /* Styly pro složené zlomky */
 .slozeny-zlomek {
-    min-width: 500px;
-    min-height: 250px;
+    min-width: 700px;
+    min-height: 500px;
 }
 
 .slozeny-zlomek p {
-    font-size: 1.4em;
+    font-size: 1.8em;
 }
