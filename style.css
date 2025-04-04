@@ -7,7 +7,115 @@ body {
     line-height: 1.7;
 }
 
-/* ... ostatní CSS styly ... */
+header {
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-top: 1px solid #4CAF50;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.explanation {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Styly pro roky jako tlačítka */
+.rok-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rok-tlacitko {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #333;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.rok-tlacitko:hover {
+    background-color: #f0f0f0;
+}
 
 /* Styly pro tlačítka v matematickém výrazu */
 .matematicky-vyraz {
