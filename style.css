@@ -162,7 +162,7 @@ footer {
     margin: 10px 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block;
+    display: inline-block important!;
 }
 
 .matematicky-vyraz .button-container { /* Vytvoříme kontejner pro tlačítka */
