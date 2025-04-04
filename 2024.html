@@ -6,17 +6,32 @@
     <title>Zlomky 2024</title>
     <link rel="stylesheet" href="style.css">
     <script>
-      MathJax = {
-        tex: {
-          inlineMath: [['$', '$']],
-          packages: ['base', 'cancel', 'color']
-        },
-      };
-    </script>
-    <script id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
-    </script>
-    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            MathJax = {
+                tex: {
+                    inlineMath: [['$', '$']],
+                    packages: ['base', 'cancel', 'color']
+                },
+                startup: {
+                    pageReady: function() {
+                        // Po vykreslení MathJax se aplikují styly
+                        var slozenyZlomek = document.querySelector('.slozeny-zlomek p');
+                        if (slozenyZlomek) {
+                            slozenyZlomek.style.fontSize = '1.4em';
+                            slozenyZlomek.parentElement.style.minWidth = '500px';
+                            slozenyZlomek.parentElement.style.minHeight = '250px';
+                        }
+                    }
+                }
+            };
+            (function() {
+                var script = document.createElement('script');
+                script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js';
+                script.async = true;
+                document.head.appendChild(script);
+            })();
+        });
+
         function zobrazReseni(reseniId, zobrazReseniButtonId) {
             var reseni = document.getElementById(reseniId);
             var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
