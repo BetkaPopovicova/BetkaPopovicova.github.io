@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="cs">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zlomky 2024</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test MathJax</title>
         <script>
           MathJax = {
             tex: {
@@ -16,7 +15,6 @@
         <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
         </script>
-      </head>
 <body>
     <header>
         <h1>Zlomky z roku 2024</h1>
@@ -29,17 +27,35 @@
                 Zde jsou řešené příklady zlomků ze zadání přijímacích zkoušek pro rok 2024.
             </p>
             </section>
-                    <div class="matematicky-vyraz">
-                        <p>
-                            $\left( 2 : \frac{3}{2} \right) : \frac{1}{2} + \left( \frac{5}{6} : \frac{3}{4} \right) : \frac{2}{3}$
-                        </p>
-                        <p>
-                            $ \frac{2}{1} &middot \frac{2}{3} &middot \frac{2}{1} + \frac{5}{6} &middot \frac{4}{3} &middot \frac{3}{2}$ 
-                        </p>
-                            <p>
-                                $\frac{\cancel{\color{red}{2}}}{1} \times \frac{2}{\cancel{\color{blue}{3}}} \times \frac{\cancel{\color{red}{2}}}{1} + \frac{5}{\cancel{\color{green}{6}}} \times \frac{\cancel{\color{green}{4}}}{3} \times \frac{3}{\cancel{\color{blue}{2}}}$
-                            </p>
-                    </div>
+            <div class="matematicky-vyraz">
+                <p>
+                  $\left( 2 : \frac{3}{2} \right) : \frac{1}{2} + \left( \frac{5}{6} : \frac{3}{4} \right) : \frac{2}{3}$
+                </p>
+                <p>
+                  $\frac{2}{1} \cdot \frac{2}{3} \cdot \frac{2}{1} + \frac{5}{6} \cdot \frac{4}{3} \cdot \frac{3}{2}$
+                </p>
+                <p>
+                  $\frac{2}{1} \cdot \frac{2}{3} \cdot \frac{2}{1} + \frac{5}{\cancel{\color{green}{6}}} \cdot \frac{\cancel{\color{green}{4}}}{3} \cdot \frac{3}{2}$
+                </p>
+                <p>
+                    $\frac{2}{1} \cdot \frac{2}{3} \cdot \frac{2}{1} + \frac{5}{3} \cdot \frac{cancel{color{green}{2}}}{cancel{color{red}{3}}} \cdot \frac{cancel{color{red}{3}}}{cancel{color{green}{2}}}$  
+                </p>
+                <p>
+                    $
+                    \frac{2}{1} 
+                    \cdot 
+                    \overbrace{\frac{2}{3}}^{\text{násobím}} 
+                    \cdot 
+                    \overbrace{\frac{2}{1}}^{\text{násobím}} 
+                    + 
+                    \frac{5}{3} 
+                    \cdot 
+                    \underbrace{\frac{1}{1}}_{\text{násobím}} 
+                    \cdot 
+                    \underbrace{\frac{1}{1}}_{\text{násobím}}
+                    $
+                    </p>
+              </div>
         
             
     </main>
