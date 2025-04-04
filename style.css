@@ -149,27 +149,28 @@ footer {
     color: green;
 }
 
-/* Styly pro tlačítko "Zobraz řešení" */
+/* Styly pro tlačítka v matematickém výrazu */
 .matematicky-vyraz button {
     padding: 12px 25px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 25px; /* Zaoblené rohy pro moderní vzhled */
+    border-radius: 25px;
     cursor: pointer;
     font-size: 1em;
-    font-weight: 600; /* Tučnější text pro lepší viditelnost */
-    margin-top: 20px; /* Větší mezera pro lepší oddělení od příkladu */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín pro 3D efekt */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Hladký přechod a efekt při stisku */
+    font-weight: 600;
+    margin: 10px 5px; /* Přidána mezera mezi tlačítky */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Zobrazení tlačítek vedle sebe */
 }
 
 .matematicky-vyraz button:hover {
     background-color: #45a049;
-    transform: translateY(-2px); /* Mírné posunutí nahoru při hoveru */
+    transform: translateY(-2px);
 }
 
 .matematicky-vyraz button:active {
-    transform: translateY(1px); /* Mírné posunutí dolů při stisku */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Menší stín při stisku */
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
