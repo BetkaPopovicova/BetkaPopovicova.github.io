@@ -19,7 +19,7 @@
             MathJax = {
                 tex: {
                     inlineMath: [['$', '$']],
-                    packages: ['base', 'cancel', 'color']
+                    packages: ['base', 'cancel', 'color', 'amsmath', 'mathtools'] // Přidáme balíčky amsmath a mathtools
                 },
                 startup: {
                     pageReady: function() {
@@ -106,7 +106,7 @@
             <div id="reseni2" style="display: none;">
                 <br>
                 <p>
-                    $\frac{\frac{13}{10} - \frac{14}{10}}{\frac{4 \, + \, 5}{30}} = \frac{\frac{-1}{10}}{\frac{9}{30}} = \frac{\frac{-1}{10}}{\frac{3}{10}}$  
+                    $\frac{\frac{13}{10} - \frac{14}{10}}{\frac{4 \, + \, 5}{30}} = \frac{\frac{\mathrlap{-}1}{10}}{\frac{9}{30}} = \frac{\frac{\mathrlap{-}1}{10}}{\frac{3}{10}}$  
                 </p>
             </div>
         </div>
