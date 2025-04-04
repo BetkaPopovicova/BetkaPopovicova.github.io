@@ -150,6 +150,12 @@ footer {
 }
 
 /* Styly pro tlačítka v matematickém výrazu */
+.matematicky-vyraz {
+    display: flex; /* Použijeme flexbox pro rozložení prvků */
+    flex-direction: column; /* Uspořádáme prvky do sloupce */
+    align-items: center; /* Vycentrujeme prvky horizontálně */
+}
+
 .matematicky-vyraz button {
     padding: 12px 25px;
     background-color: #4CAF50;
@@ -162,7 +168,7 @@ footer {
     margin: 10px 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block;
+    display: inline-block; /* Zobrazíme tlačítka vedle sebe */
 }
 
 .matematicky-vyraz button:hover {
