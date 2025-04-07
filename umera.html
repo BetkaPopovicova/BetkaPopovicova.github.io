@@ -6,10 +6,37 @@
     <title>Připrav se na Přijímačky!</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        document.getElementById('zobrazReseni').addEventListener('click', function() {
-            document.getElementById('reseni').style.display = 'block';
-        });
+    // Funkce pro zobrazení/skrýtí řešení
+        function zobrazReseni(reseniId, zobrazReseniButtonId) {
+            var reseni = document.getElementById(reseniId);
+            var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
+
+            if (reseni.style.display === "none") {
+                reseni.style.display = "block";
+                zobrazReseniButton.textContent = "Skrýt řešení";
+            } else {
+                reseni.style.display = "none";
+                zobrazReseniButton.textContent = "Zobraz řešení";
+            }
+        }
+
+        function zobrazVideoReseni() {
+            alert("Video řešení bude brzy dostupné.");
+        }
     </script>
+</head>
+<body>
+    <header>
+        <h1>Zlomky z roku 2024</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>1. řádný termín</h2>
+            <p>
+                Zde jsou řešené příklady zlomků ze zadání přijímacích zkoušek pro rok 2024.
+            </p>
+        </section>
 </head>
 <body>
     <header>
