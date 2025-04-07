@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Připrav se na Přijímačky!</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.getElementById('zobrazReseni').addEventListener('click', function() {
+            document.getElementById('reseni').style.display = 'block';
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Chytrá Příprava na Přijímačky</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Přímá a nepřímá úměra</h2>
+            <div>
+                <p>
+                    Pět švadlen, které šijí oblečení, pracují stejným tempem. Tyto švadleny splní danou zakázku za 24 hodin.
+                </p>
+                <p>
+                    <b>Za jakou dobu splní o polovinu větší zakázku čtyři švadleny?</b>
+                </p>
+                <button id="zobrazReseni">Zobrazit řešení</button>
+                <div id="reseni" style="display: none;">
+                    <p>
+                        <b>Řešení:</b>
+                    </p>
+                    <p>
+                        1. Výpočet času pro původní zakázku čtyřmi švadlenami:
+                    </p>
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <p style="position: relative;">
+                            5 švadlen ........ 24 hodin
+                            <span style="position: absolute; bottom: -5px; left: 0; width: 100%; border-bottom: 1px solid black;"></span>
+                        </p>
+                        <p style="position: relative;">
+                            4 švadleny ....... x hodin
+                            <span style="position: absolute; bottom: -5px; left: 0; width: 100%; border-bottom: 1px solid black;"></span>
+                        </p>
+                        <div style="display: flex; justify-content: space-between; width: 100%;">
+                            <span style="align-self: flex-end;">↓</span>
+                            <span style="align-self: flex-start;">↑</span>
+                        </div>
+                    </div>
+                    <p>
+                        120 hodin práce / 4 švadleny = 30 hodin
+                    </p>
+                    <p>
+                        2. Výpočet času pro o polovinu větší zakázku:
+                    </p>
+                    <p>
+                        30 hodin * 1,5 = 45 hodin
+                    </p>
+                    <p>
+                        Čtyři švadleny splní o polovinu větší zakázku za 45 hodin.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Připrav se na Přijímačky</p>
+        </div>
+    </footer>
+</body>
+</html>
