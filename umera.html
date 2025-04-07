@@ -27,19 +27,6 @@
 </head>
 <body>
     <header>
-        <h1>Zlomky z roku 2024</h1>
-    </header>
-
-    <main class="container">
-        <section>
-            <h2>1. řádný termín</h2>
-            <p>
-                Zde jsou řešené příklady zlomků ze zadání přijímacích zkoušek pro rok 2024.
-            </p>
-        </section>
-</head>
-<body>
-    <header>
         <h1>Chytrá Příprava na Přijímačky</h1>
     </header>
 
@@ -53,8 +40,11 @@
                 <p>
                     <b>Za jakou dobu splní o polovinu větší zakázku čtyři švadleny?</b>
                 </p>
-                <button id="zobrazReseni">Zobrazit řešení</button>
-                <div id="reseni" style="display: none;">
+                <div class="button-container">
+                    <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                    <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+                </div>
+                <div id="reseni1" style="display: none;">
                     <p>
                         <b>Řešení:</b>
                     </p>
