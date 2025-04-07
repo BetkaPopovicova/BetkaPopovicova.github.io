@@ -17,13 +17,13 @@
                 pageReady: function () {
                     const slozenyZlomek = document.querySelector('.slozeny-zlomek p');
                     if (slozenyZlomek) {
-                        slozenyZlomek.style.fontSize = '1.4em';
+                        slozenyZlomek.style.fontSize = '1.3em';
                         slozenyZlomek.parentElement.style.minWidth = '500px';
                         slozenyZlomek.parentElement.style.minHeight = '250px';
 
                         MathJax.typesetPromise([slozenyZlomek]).then(() => {
                             slozenyZlomek.querySelectorAll('mjx-mfrac').forEach(mfrac => {
-                                mfrac.style.fontSize = '1.4em';
+                                mfrac.style.fontSize = '1.3em';
                             });
                         });
                     }
@@ -116,7 +116,7 @@
             <div id="reseni2" style="display: none;">
                 <br>
                 <p>
-                    $\frac{\frac{13}{10} - \frac{14}{10}}{\frac{4 + 5}{30}} = \frac{\frac{-1}{10}}{\frac{9}{30}} = \frac{\frac{-1}{10}}{\frac{3}{10}}$
+                    $\frac{\frac{13}{10} - \frac{14}{10}}{\frac{4 + 5}{30}} = \dfrac{\dfrac{-1}{10}}{\dfrac{9}{30}} = \dfrac{\dfrac{-1}{10}}{\dfrac{3}{10}}$
                 </p>
             </div>
         </div>
