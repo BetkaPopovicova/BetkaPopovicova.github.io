@@ -5,43 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zlomky 2024</title>
     <link rel="stylesheet" href="style.css">
+    
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Vložíme MathJax skript dříve
-            (function() {
-                var script = document.createElement('script');
-                script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js';
-                script.async = true;
-                document.head.appendChild(script);
-            })();
+        // Nejdříve nastavíme konfiguraci MathJax
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                packages: ['base', 'cancel', 'color', 'amsmath', 'mathtools']
+            },
+            startup: {
+                pageReady: function () {
+                    const slozenyZlomek = document.querySelector('.slozeny-zlomek p');
+                    if (slozenyZlomek) {
+                        slozenyZlomek.style.fontSize = '1.4em';
+                        slozenyZlomek.parentElement.style.minWidth = '500px';
+                        slozenyZlomek.parentElement.style.minHeight = '250px';
 
-            // Nastavíme MathJax a aplikujeme styly po načtení MathJax
-            MathJax = {
-                tex: {
-                    inlineMath: [['$', '$']],
-                    packages: ['base', 'cancel', 'color', 'amsmath', 'mathtools'] // Přidáme balíčky amsmath a mathtools
-                },
-                startup: {
-                    pageReady: function() {
-                        // Po vykreslení MathJax se aplikují styly
-                        var slozenyZlomek = document.querySelector('.slozeny-zlomek p');
-                        if (slozenyZlomek) {
-                            slozenyZlomek.style.fontSize = '1.4em';
-                            slozenyZlomek.parentElement.style.minWidth = '500px';
-                            slozenyZlomek.parentElement.style.minHeight = '250px';
-
-                            // Přidáme styl pro zvětšení zlomku v MathJaxu
-                            MathJax.typesetPromise([slozenyZlomek]).then(() => {
-                                slozenyZlomek.querySelectorAll('mjx-mfrac').forEach(mfrac => {
-                                    mfrac.style.fontSize = '1.4em';
-                                });
+                        MathJax.typesetPromise([slozenyZlomek]).then(() => {
+                            slozenyZlomek.querySelectorAll('mjx-mfrac').forEach(mfrac => {
+                                mfrac.style.fontSize = '1.4em';
                             });
-                        }
+                        });
                     }
+                    return MathJax.startup.defaultPageReady();
                 }
-            };
+            }
+        };
+
+        // Poté načteme MathJax skript
+        document.addEventListener('DOMContentLoaded', function () {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js';
+            script.async = true;
+            document.head.appendChild(script);
         });
 
+        // Funkce pro zobrazení/skrýtí řešení
         function zobrazReseni(reseniId, zobrazReseniButtonId) {
             var reseni = document.getElementById(reseniId);
             var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
@@ -72,6 +71,8 @@
                 Zde jsou řešené příklady zlomků ze zadání přijímacích zkoušek pro rok 2024.
             </p>
         </section>
+
+        <!-- Příklad 1 -->
         <div class="matematicky-vyraz">
             <p>
                 $\left( 2 : \frac{3}{2} \right) : \frac{1}{2} + \left( \frac{5}{6} : \frac{3}{4} \right) : \frac{2}{3}$
@@ -92,16 +93,18 @@
                     $ = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{2}{1} + \frac{5}{3} \cdot \frac{\cancel{\color{green}{2}}}{\cancel{\color{red}{3}}} \cdot \frac{\cancel{\color{red}{3}}}{\cancel{\color{green}{2}}}$
                 </p>
                 <p>
-                    $ =\frac{2}{1} \cdot \frac{2}{3} \cdot \frac{2}{1} + \frac{5}{3} \cdot \frac{1}{1} \cdot \frac{1}{1}$
+                    $ = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{2}{1} + \frac{5}{3} \cdot \frac{1}{1} \cdot \frac{1}{1}$
                 </p>
                 <p>
-                    $ = \frac{2 \, \cdot \, 2 \, \cdot \, 2}{1 \, \cdot \, 3 \, \cdot \, 1} + \frac{5 \, \cdot \, 1 \, \cdot \, 1}{3 \, \cdot \, 1 \, \cdot \, 1}$
+                    $ = \frac{2 \cdot 2 \cdot 2}{1 \cdot 3 \cdot 1} + \frac{5 \cdot 1 \cdot 1}{3 \cdot 1 \cdot 1}$
                 </p>
                 <p>
-                    $ = \frac{8}{3} + \frac{5}{3} = \frac{8 \, + \, 5}{3} = \frac{13}{3} $
+                    $ = \frac{8}{3} + \frac{5}{3} = \frac{8 + 5}{3} = \frac{13}{3}$
                 </p>
             </div>
         </div>
+
+        <!-- Příklad 2 -->
         <div class="matematicky-vyraz slozeny-zlomek">
             <p>
                 $\frac{\frac{13}{10} - 1,4}{\frac{2}{15} + \frac{1}{6}}$
@@ -113,7 +116,7 @@
             <div id="reseni2" style="display: none;">
                 <br>
                 <p>
-                    $\frac{\frac{13}{10} - \frac{14}{10}}{\frac{4 \, + \, 5}{30}} = \frac{\frac{-1}{10}}{\frac{9}{30}} = \frac{\frac{-1}{10}}{\frac{3}{10}}$  
+                    $\frac{\frac{13}{10} - \frac{14}{10}}{\frac{4 + 5}{30}} = \frac{\frac{-1}{10}}{\frac{9}{30}} = \frac{\frac{-1}{10}}{\frac{3}{10}}$
                 </p>
             </div>
         </div>
