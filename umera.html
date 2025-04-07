@@ -49,12 +49,26 @@
                         Výpočet času pro původní zakázku čtyřmi švadlenami:
                     </p>
                     <div style="display: flex; align-items: center; justify-content: space-between;">
-                        <span style="align-self: flex-start; height: 100%; display: flex; align-items: center;">↓</span>
+                        <svg width="20" height="60" style="align-self: flex-start;">
+                            <line x1="10" y1="0" x2="10" y2="50" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="2.5" orient="auto">
+                                    <polygon points="0,0 5,2.5 0,5" fill="black" />
+                                </marker>
+                            </defs>
+                        </svg>
                         <div style="display: flex; flex-direction: column; align-items: center;">
                             <p>5 švadlen ........ 24 hodin</p>
                             <p>4 švadleny ....... x hodin</p>
                         </div>
-                        <span style="align-self: flex-end; height: 100%; display: flex; align-items: center;">↑</span>
+                        <svg width="20" height="60" style="align-self: flex-end;">
+                            <line x1="10" y1="50" x2="10" y2="0" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="2.5" orient="auto">
+                                    <polygon points="0,0 5,2.5 0,5" fill="black" />
+                                </marker>
+                            </defs>
+                        </svg>
                     </div>
                     <p>
                         120 hodin práce / 4 švadleny = 30 hodin
