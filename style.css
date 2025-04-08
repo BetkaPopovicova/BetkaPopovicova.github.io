@@ -190,3 +190,16 @@ footer {
 .slozeny-zlomek p {
     font-size: 1.8em;
 }
+
+.arrow-down, .arrow-up {
+    font-size: 4em;
+    line-height: 1.5;
+}
+
+/* Pro mobilní zařízení */
+@media (max-width: 600px) {
+    .arrow-down, .arrow-up {
+        font-size: 3em;  /* Zmenšíme šipky */
+        line-height: 1.2; /* Zkrátíme výšku šipek */
+    }
+}
