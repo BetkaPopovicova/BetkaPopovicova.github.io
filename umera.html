@@ -44,32 +44,40 @@
                     </div>
                 <div id="reseni1" style="display: none;">
                     <div style="display: flex; align-items: center; font-size: 1.2em;">
-                        <!-- Levá šipka nahoru -->
-                        <div style="display: flex; align-items: center; height: 2.8em;">
-                            <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 1.5em;">↑</span>
+                        <!-- Levá šipka (nahoru) -->
+                        <div style="display: flex; align-items: center; height: 2.5em;">
+                            <span style="font-size: 2.5em; line-height: 1;">↑</span>
                         </div>
                     
-                        <!-- Text se švadlenami -->
+                        <!-- Dvourádkový text -->
                         <div style="display: flex; flex-direction: column; margin: 0 1em;">
-                            <div style="display: flex; justify-content: space-between; width: 200px;">
+                            <div>
                                 <span>5 švadlen</span>
-                                <span>.....</span>
+                                <span style="display: inline-block; width: 3em; text-align: center;">.....</span>
                                 <span>24 hodin</span>
                             </div>
-                            <div style="display: flex; justify-content: space-between; width: 200px;">
+                            <div>
                                 <span>4 švadleny</span>
-                                <span>.....</span>
+                                <span style="display: inline-block; width: 3em; text-align: center;">.....</span>
                                 <span>x hodin</span>
                             </div>
                         </div>
                     
-                        <!-- Pravá šipka dolů -->
-                        <div style="display: flex; align-items: center; height: 2.8em;">
-                            <span style="writing-mode: vertical-rl; font-size: 1.5em;">↓</span>
+                        <!-- Pravá šipka (dolů) -->
+                        <div style="display: flex; align-items: center; height: 2.5em;">
+                            <span style="font-size: 2.5em; line-height: 1;">↓</span>
                         </div>
                     </div>
                     
                     
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <span style="font-size: 2em; margin-right: 10px; align-self: flex-start;">↑</span>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <p>5 švadlen ........ 24 hodin</p>
+                            <p>4 švadleny ....... x hodin</p>
+                        </div>
+                        <span style="font-size: 2em; margin-left: 10px; align-self: flex-end;">↓</span>
+                    </div>
                     <p>
                         120 hodin práce / 4 švadleny = 30 hodin
                     </p>
