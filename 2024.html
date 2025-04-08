@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
     
     <script>
-        // Nejdříve nastavíme konfiguraci MathJax
+        // Opravená konfigurace MathJax
         window.MathJax = {
             tex: {
                 inlineMath: [['$', '$']],
-                packages: ['base', 'cancel', 'color', 'amsmath', 'mathtools']
+                packages: {'[+]': ['base', 'cancel', 'color', 'ams']}
             },
             startup: {
                 pageReady: function () {
@@ -32,7 +32,7 @@
             }
         };
 
-        // Poté načteme MathJax skript
+        // Načtení MathJax
         document.addEventListener('DOMContentLoaded', function () {
             var script = document.createElement('script');
             script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js';
@@ -40,7 +40,7 @@
             document.head.appendChild(script);
         });
 
-        // Funkce pro zobrazení/skrýtí řešení
+        // Tlačítka pro zobrazení řešení
         function zobrazReseni(reseniId, zobrazReseniButtonId) {
             var reseni = document.getElementById(reseniId);
             var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
@@ -107,7 +107,7 @@
         <!-- Příklad 2 -->
         <div class="matematicky-vyraz slozeny-zlomek">
             <p>
-                $\frac{\frac{13}{10} - 1,4}{\frac{2}{15} + \frac{1}{6}}$
+                $\frac{\frac{13}{10} - 1{,}4}{\frac{2}{15} + \frac{1}{6}}$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
@@ -117,10 +117,10 @@
                 <br>
                 <p>
                     $\frac{\frac{13}{10} - \frac{14}{10}}{\frac{4 + 5}{30}} 
-                    = \frac{\genfrac{}{}{0pt}{}{-1}{10}}{\frac{9}{30}} 
-                    = \frac{\genfrac{}{}{0pt}{}{-1}{10}}{\genfrac{}{}{0pt}{}{3}{10}} 
-                    = \frac{-1}{\cancel{\color{red}{10}}} \cdot \frac{\cancel{\color{red}{10}}}{3}$
-                    </p>            
+                    = \frac{\frac{-1}{10}}{\frac{9}{30}} 
+                    = \frac{-1}{10} \cdot \frac{30}{9}
+                    = \frac{-1 \cdot 30}{10 \cdot 9} = \frac{-30}{90} = \frac{-1}{3}$
+                </p>            
             </div>
         </div>
     </main>
