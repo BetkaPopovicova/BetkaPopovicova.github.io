@@ -36,8 +36,6 @@
             <div class="matematicky-vyraz">
                 <p>
                     Pět švadlen, které šijí oblečení, pracují stejným tempem. Tyto švadleny splní danou zakázku za 24 hodin.
-                </p>
-                <p>
                     <b>Za jakou dobu splní o polovinu větší zakázku čtyři švadleny?</b>
                 </p>
                     <div class="button-container">
@@ -45,23 +43,32 @@
                         <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
                     </div>
                 <div id="reseni1" style="display: none;">
-                    <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
-                        <!-- Levá šipka dolů -->
-                        <div style="font-size: 2.5em; line-height: 1; display: flex; flex-direction: column; justify-content: space-between; height: 3em;">
-                            <span>↓</span>
+                    <div style="display: flex; align-items: center; font-size: 1.2em;">
+                        <!-- Levá šipka nahoru -->
+                        <div style="display: flex; align-items: center; height: 2.8em;">
+                            <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 1.5em;">↑</span>
                         </div>
                     
                         <!-- Text se švadlenami -->
-                        <div style="display: flex; flex-direction: column; font-size: 1.2em; line-height: 1.5;">
-                            <span>5 švadlen ........ 24 hodin</span>
-                            <span>4 švadleny ....... x hodin</span>
+                        <div style="display: flex; flex-direction: column; margin: 0 1em;">
+                            <div style="display: flex; justify-content: space-between; width: 200px;">
+                                <span>5 švadlen</span>
+                                <span>.....</span>
+                                <span>24 hodin</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; width: 200px;">
+                                <span>4 švadleny</span>
+                                <span>.....</span>
+                                <span>x hodin</span>
+                            </div>
                         </div>
                     
-                        <!-- Pravá šipka nahoru -->
-                        <div style="font-size: 2.5em; line-height: 1; display: flex; flex-direction: column; justify-content: space-between; height: 3em;">
-                            <span>↑</span>
+                        <!-- Pravá šipka dolů -->
+                        <div style="display: flex; align-items: center; height: 2.8em;">
+                            <span style="writing-mode: vertical-rl; font-size: 1.5em;">↓</span>
                         </div>
                     </div>
+                    
                     
                     <p>
                         120 hodin práce / 4 švadleny = 30 hodin
