@@ -45,14 +45,21 @@
                         <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
                     </div>
                 <div id="reseni1" style="display: none;">
-                    <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
-                        <div style="display: flex; flex-direction: column; align-items: center; line-height: 1;">
-                            <span style="font-size: 1.5em;">↓</span>
-                            <span style="font-size: 1.5em;">↑</span>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+                        <!-- Levá šipka dolů -->
+                        <div style="font-size: 2.5em; line-height: 1; display: flex; flex-direction: column; justify-content: space-between; height: 3em;">
+                            <span>↓</span>
                         </div>
-                        <div style="display: flex; flex-direction: column; line-height: 1.5; font-size: 1.2em;">
-                            <p style="margin: 0;">5 švadlen ........ 24 hodin</p>
-                            <p style="margin: 0;">4 švadleny ....... x hodin</p>
+                    
+                        <!-- Text se švadlenami -->
+                        <div style="display: flex; flex-direction: column; font-size: 1.2em; line-height: 1.5;">
+                            <span>5 švadlen ........ 24 hodin</span>
+                            <span>4 švadleny ....... x hodin</span>
+                        </div>
+                    
+                        <!-- Pravá šipka nahoru -->
+                        <div style="font-size: 2.5em; line-height: 1; display: flex; flex-direction: column; justify-content: space-between; height: 3em;">
+                            <span>↑</span>
                         </div>
                     </div>
                     
