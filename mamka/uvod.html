@@ -118,26 +118,57 @@
         #about {
             display: flex;
             flex-direction: row-reverse;
-            align-items: flex-start;
+            align-items: stretch;
+            margin-right: auto;
             margin-left: auto;
-            margin-right: 5cm;
-            margin-top: 50px; /* increased top margin to move it down */
+            margin-top: 50px;
             text-align: left;
             margin-bottom: 50px;
             max-width: 1200px;
         }
         #about-image-frame {
-            width: 200px;
-            height: 250px;
-            border: 2px solid #003366;
-            margin-left: 20px;
-            object-fit: cover;
-            object-position: center;
-            background-color: #f0f0f0;
+            display: none;
         }
         #about-text {
             flex: 1;
-            max-width: 400px;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        #about {
+            min-height: calc(100vh - 200px);
+            display: flex;
+            align-items: stretch;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #about-expand {
+            display: none;
+        }
+
+        #about-button {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-family: 'Open Sans', sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        #about-button:hover {
+            background-color: #002244;
+            transform: translateY(-4px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -180,7 +211,19 @@
                 </div>
             <div id="about-text">
                 <h2>About Us</h2>
-                <p>Bohemian Accounting Services is a leading accounting firm dedicated to providing exceptional financial services. With years of experience, we understand the unique challenges businesses face in today's dynamic market. Our team of experts is committed to delivering tailored solutions that help our clients achieve their financial goals.</p>
+                <p><strong>Bohemian Accounting Services</strong> has been a trusted partner for businesses in Prague for over 15 years.  Founded by a team of experienced accountants, our mission is to provide comprehensive and personalized accounting solutions that empower our clients to achieve their financial goals. We understand that every business is unique, and we tailor our services to meet your specific needs.</p>
+                <button id="about-button">Více</button>
+                <div id="about-expand">
+                    <p>Our team is comprised of highly qualified professionals with deep expertise in Czech accounting standards, tax laws, and financial regulations. We are committed to staying up-to-date with the latest changes in the industry to ensure that our clients receive the most accurate and reliable advice.</p>
+                    <p><strong>Our Values</strong></p>
+                    <ul>
+                        <li><strong>Integrity:</strong> We adhere to the highest ethical standards in all our interactions.</li>
+                        <li><strong>Accuracy:</strong> We are committed to providing precise and reliable financial information.</li>
+                        <li><strong>Client Focus:</strong> We prioritize our clients' needs and work diligently to exceed their expectations.</li>
+                        <li><strong>Confidentiality:</strong> We understand the sensitive nature of financial data and ensure its utmost security.</li>
+                    </ul>
+                    <p>We believe in building long-term relationships with our clients, serving as their trusted advisors and partners in success.  Let us handle your accounting needs so you can focus on what you do best – growing your business.</p>
+                </div>
             </div>
         </section>
 
@@ -197,5 +240,19 @@
     <footer>
         <p>&copy; 2024 Bohemian Accounting Services. All rights reserved.</p>
     </footer>
+    <script>
+        const aboutButton = document.getElementById('about-button');
+        const aboutExpand = document.getElementById('about-expand');
+
+        aboutButton.addEventListener('click', () => {
+            if (aboutExpand.style.display === 'none') {
+                aboutExpand.style.display = 'block';
+                aboutButton.textContent = 'Méně';
+            } else {
+                aboutExpand.style.display = 'none';
+                aboutButton.textContent = 'Více';
+            }
+        });
+    </script>
 </body>
 </html>
