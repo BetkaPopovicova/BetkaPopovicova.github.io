@@ -41,11 +41,11 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
-            position: relative; /* Aby se čára mohla umístit relativně k prvku */
-            padding-bottom: 3px; /* Aby bylo místo pro čáru */
+            position: relative;
+            padding-bottom: 3px;
         }
         nav ul li a:hover {
-            color: #fff; /* Ensure text stays white on hover */
+            color: #fff;
         }
         nav ul li a:hover::after {
             content: '';
@@ -54,7 +54,7 @@
             bottom: 0;
             width: 100%;
             height: 2px;
-            background-color: #fff; /* Barva čáry */
+            background-color: #fff;
             animation: drawLine 0.3s ease-in-out;
         }
         @keyframes drawLine {
@@ -87,6 +87,13 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             text-align: center;
+            display: inline-block; /* změněno na inline-block */
+            width: 30%;          /* nastaveno na 30% šířky */
+            margin-right: 3%;    /* přidán odstup mezi boxy */
+            vertical-align: top;  /* zarovnání horního okraje boxů */
+        }
+        .service-box:last-child {
+            margin-right: 0; /* odstraněn pravý okraj u posledního boxu */
         }
         .service-box h3 {
             color: #003366;
