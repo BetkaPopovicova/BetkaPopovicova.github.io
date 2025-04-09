@@ -1,163 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional accounting services for international businesses in the Czech Republic">
-  <title>Your Company Name</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #0073e6;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    section {
-      padding: 40px 20px;
-      margin: 20px;
-    }
-
-    h2 {
-      color: #0073e6;
-    }
-
-    .cta-btn {
-      background-color: #0073e6;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .cta-btn:hover {
-      background-color: #005bb5;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    .service-list {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .service-item {
-      flex: 1;
-      min-width: 250px;
-      margin: 10px;
-      padding: 20px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      text-align: center;
-    }
-
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    .contact-form button {
-      background-color: #0073e6;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .contact-form button:hover {
-      background-color: #005bb5;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohemian Accounting Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #003366;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            position: relative; /* Aby se čára mohla umístit relativně k prvku */
+            padding-bottom: 3px; /* Aby bylo místo pro čáru */
+        }
+        nav ul li a:hover {
+            color: #fff; /* Ensure text stays white on hover */
+        }
+        nav ul li a:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff; /* Barva čáry */
+            animation: drawLine 0.3s ease-in-out;
+        }
+        @keyframes drawLine {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section h2 {
+            color: #003366;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .service-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .service-box h3 {
+            color: #003366;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-info p {
+            font-size: 16px;
+            color: #555;
+        }
+        footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        #about {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            margin-left: auto;
+            margin-right: 5cm;
+            margin-top: 20px;
+            text-align: left;
+            margin-bottom: 50px;
+            max-width: 1200px;
+        }
+        #about-image-frame {
+            width: 200px;
+            height: 250px;
+            border: 2px solid #003366;
+            margin-left: 20px;
+            object-fit: cover;
+            object-position: center;
+            background-color: #f0f0f0;
+        }
+        #about-text {
+            flex: 1;
+            max-width: 400px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Bohemian Accounting Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <h1>Welcome to Your Company Name</h1>
-  <p>Professional Accounting Services for International Businesses in the Czech Republic</p>
-</header>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Welcome</h2>
+            <p>Welcome to Bohemian Accounting Services, your trusted accounting partner. We offer a wide range of accounting services for small and medium-sized businesses.</p>
+        </section>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="service-list">
-    <div class="service-item">
-      <h3>Accounting & Bookkeeping</h3>
-      <p>We provide accurate and reliable bookkeeping services tailored to your business needs.</p>
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="service-box">
+                <h3>Accounting Advisory</h3>
+                <p>We provide expert advice on accounting and tax matters.</p>
+            </div>
+            <div class="service-box">
+                <h3>Payroll Processing</h3>
+                <p>We handle all aspects of payroll processing and HR.</p>
+            </div>
+            <div class="service-box">
+                <h3>Tax Returns</h3>
+                <p>We help you with accurate and timely tax return preparation.</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div id="about-image-frame">
+                </div>
+            <div id="about-text">
+                <h2>About Us</h2>
+                <p>Bohemian Accounting Services is a leading accounting firm dedicated to providing exceptional financial services. With years of experience, we understand the unique challenges businesses face in today's dynamic market. Our team of experts is committed to delivering tailored solutions that help our clients achieve their financial goals.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Email: info@bohemianaccounting.cz</p>
+                <p>Phone: +420 123 456 789</p>
+                <p>Address: Prague 1, Nove Mesto</p>
+            </div>
+        </section>
     </div>
-    <div class="service-item">
-      <h3>Tax Services</h3>
-      <p>We handle tax filings, VAT registration, and annual returns in full compliance with Czech tax laws.</p>
-    </div>
-    <div class="service-item">
-      <h3>Payroll Management</h3>
-      <p>Our team processes payroll, including tax deductions and social security contributions.</p>
-    </div>
-    <div class="service-item">
-      <h3>Business Setup</h3>
-      <p>We assist in setting up your business, from registration to setting up tax identification.</p>
-    </div>
-    <div class="service-item">
-      <h3>Consulting</h3>
-      <p>Get tailored financial consulting services to navigate the Czech business environment.</p>
-    </div>
-  </div>
-</section>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>[Your Company Name] is founded by experienced professionals who understand both Czech accounting practices and international business standards. We aim to help foreign businesses succeed in the Czech market with transparent, efficient, and compliant financial solutions.</p>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>If you're ready to get started or have any questions, don't hesitate to contact us. We're here to help your business thrive in the Czech Republic.</p>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-<footer>
-  <p>&copy; 2025 Your Company Name | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-  <p>
-    <a href="#">LinkedIn</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a>
-  </p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 Bohemian Accounting Services. All rights reserved.</p>
+    </footer>
 </body>
 </html>
