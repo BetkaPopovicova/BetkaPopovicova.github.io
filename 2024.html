@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zlomky 2024</title>
     <link rel="stylesheet" href="style.css">
-    
+
+    <style>
+        .matematicky-vyraz p {
+            font-size: 1.1em;
+        }
+
+        .slozeny-zlomek p {
+            font-size: 0.9em;
+        }
+
+        mjx-mfrac {
+            font-size: 0.85em !important;
+        }
+
+        mjx-container {
+            font-size: 1em;
+        }
+    </style>
+
     <script>
-        // Opravená konfigurace MathJax
         window.MathJax = {
             tex: {
                 inlineMath: [['$', '$']],
@@ -17,13 +34,13 @@
                 pageReady: function () {
                     const slozenyZlomek = document.querySelector('.slozeny-zlomek p');
                     if (slozenyZlomek) {
-                        slozenyZlomek.style.fontSize = '1.3em';
-                        slozenyZlomek.parentElement.style.minWidth = '500px';
-                        slozenyZlomek.parentElement.style.minHeight = '250px';
+                        slozenyZlomek.style.fontSize = '0.9em'; // menší než dříve
+                        slozenyZlomek.parentElement.style.minWidth = '400px';
+                        slozenyZlomek.parentElement.style.minHeight = '200px';
 
                         MathJax.typesetPromise([slozenyZlomek]).then(() => {
                             slozenyZlomek.querySelectorAll('mjx-mfrac').forEach(mfrac => {
-                                mfrac.style.fontSize = '1.3em';
+                                mfrac.style.fontSize = '0.85em';
                             });
                         });
                     }
@@ -32,7 +49,6 @@
             }
         };
 
-        // Načtení MathJax
         document.addEventListener('DOMContentLoaded', function () {
             var script = document.createElement('script');
             script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js';
@@ -40,7 +56,6 @@
             document.head.appendChild(script);
         });
 
-        // Tlačítka pro zobrazení řešení
         function zobrazReseni(reseniId, zobrazReseniButtonId) {
             var reseni = document.getElementById(reseniId);
             var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
@@ -96,10 +111,7 @@
                     $ = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{2}{1} + \frac{5}{3} \cdot \frac{1}{1} \cdot \frac{1}{1}$
                 </p>
                 <p>
-                    $ = \frac{2 \,\cdot\, 2 \,\cdot\, 2}{1 \,\cdot\, 3 \,\cdot\, 1} + \frac{5 \,\cdot\, 1 \cdot\, 1}{3 \,\cdot\, 1 \,\cdot\, 1}$
-                </p>
-                <p>
-                    $ = \frac{8}{3} + \frac{5}{3} = \frac{8 \,+\, 5}{3} = \frac{13}{3}$
+                    $ = \frac{8}{3} + \frac{5}{3} = \frac{13}{3}$
                 </p>
             </div>
         </div>
@@ -117,11 +129,12 @@
                 <br>
                 <p>
                     $\frac{\frac{13}{10} - \frac{14}{10}}{\frac{4 + 5}{30}} 
-                    = \frac{\frac{-1}{10}}\frac{\cancel{\color{red}\phantom{-}9\phantom{-}}{\cancel{\color{red}30}}
-                    =  \frac{\frac{-1}{10}}{\frac{\phantom{-}3\phantom{-}}{10}}
-                    = \frac{-1}{10} \cdot \frac{10}{3}
-                    = \frac{-1 \cdot 30}{10 \cdot 9} = \frac{-30}{90} = \frac{-1}{3}$
-                </p>            
+                    = \frac{\frac{-1}{10}}{\frac{\cancel{\color{red}9}}{\cancel{\color{red}30}}}
+                    = \frac{-1}{10} \cdot \frac{30}{9}
+                    = \frac{-1 \cdot 30}{10 \cdot 9}
+                    = \frac{-30}{90}
+                    = \frac{-1}{3}$
+                </p>
             </div>
         </div>
     </main>
