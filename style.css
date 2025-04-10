@@ -187,9 +187,7 @@ footer {
     min-height: 500px;
 }
 
-.slozeny-zlomek p {
-    font-size: 1.8em;
-}
+
 
 .arrow-down, .arrow-up {
     font-size: 4em;
@@ -202,5 +200,9 @@ footer {
         font-size: 3em;  /* Zmenšíme šipky */
         line-height: 1.2; /* Zkrátíme výšku šipek */
     }
+}
+
+.zadani-vetsi {
+    font-size: 1.5em;
 }
 
