@@ -18,20 +18,34 @@
                 pageReady: function () {
                     const slozenyZlomek = document.querySelector('.slozeny-zlomek p');
                     if (slozenyZlomek) {
-                        slozenyZlomek.style.fontSize = '0.9em'; // menší než dříve
+                        slozenyZlomek.style.fontSize = '0.9em';
                         slozenyZlomek.parentElement.style.minWidth = '400px';
                         slozenyZlomek.parentElement.style.minHeight = '200px';
-
-                        MathJax.typesetPromise([slozenyZlomek]).then(() => {
+                    }
+    
+                    return MathJax.startup.defaultPageReady().then(() => {
+                        // Zvětšit složený zlomek ve slozeny-zlomek
+                        if (slozenyZlomek) {
                             slozenyZlomek.querySelectorAll('mjx-mfrac').forEach(mfrac => {
                                 mfrac.style.fontSize = '1.5em';
                             });
-                        });
-                    }
-                    return MathJax.startup.defaultPageReady();
+                        }
+    
+                        // Zvětšit pouze složený zlomek v řešení2
+                        const reseni2 = document.getElementById('reseni2');
+                        if (reseni2) {
+                            reseni2.querySelectorAll('mjx-mfrac').forEach(mfrac => {
+                                if (mfrac.querySelector('mjx-mfrac')) {
+                                    mfrac.style.fontSize = '1.5em';
+                                }
+                            });
+                        }
+                    });
                 }
             }
         };
+ 
+    
 
         document.addEventListener('DOMContentLoaded', function () {
             var script = document.createElement('script');
