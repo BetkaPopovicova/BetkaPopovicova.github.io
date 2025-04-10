@@ -203,6 +203,11 @@ footer {
 }
 
 .zadani-vetsi {
-    font-size: 1.5em;
+    font-size: 2.2em;
 }
 
+
+
+mjx-container {
+    font-size: 2em;
+}
