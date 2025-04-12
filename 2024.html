@@ -34,6 +34,7 @@
                                             // Zvětšit pouze složený zlomek v řešení 2 a 4
                         const reseni2 = document.getElementById('reseni2');
                         const reseni4 = document.getElementById('reseni4');
+                        const zadani4 = document.getElementById('zadani4')
 
                         const adjustFontSize = (element) => {
                             if (element) {
@@ -48,6 +49,7 @@
                         // Aplikovat úpravy na obě řešení
                         adjustFontSize(reseni2);
                         adjustFontSize(reseni4);
+                        adjustFontSize(zadani4);
 
                                             });
                                         }
@@ -170,7 +172,7 @@
         </div>
 
         <div class="matematicky-vyraz slozeny-zlomek">
-            <p class="zadani-vetsi" id="reseni4">
+            <p class="zadani-vetsi" id="zadani4">
                 $\frac{\frac{5}{9} - \frac{3}{2} \cdot \frac{3}{5}}{\frac{7}{6} + \frac{1}{2}}$
             </p>
             <div class="button-container">
