@@ -18,7 +18,7 @@
                 pageReady: function () {
                     const slozenyZlomek = document.querySelector('.slozeny-zlomek p');
                     if (slozenyZlomek) {
-                        slozenyZlomek.style.fontSize = '1.5em';
+                        slozenyZlomek.style.fontSize = '0.9em';
                         slozenyZlomek.parentElement.style.minWidth = '400px';
                         slozenyZlomek.parentElement.style.minHeight = '200px';
                     }
@@ -31,26 +31,26 @@
                             });
                         }
     
-                                                // Zvětšit pouze složený zlomek v řešení 2 a 4
-                            const reseni2 = document.getElementById('reseni2');
-                            const reseni4 = document.getElementById('reseni4');
+                                            // Zvětšit pouze složený zlomek v řešení 2 a 4
+                        const reseni2 = document.getElementById('reseni2');
+                        const reseni4 = document.getElementById('reseni4');
 
-                            const adjustFontSize = (element) => {
-                                if (element) {
-                                    element.querySelectorAll('mjx-mfrac').forEach(mfrac => {
-                                        if (mfrac.querySelector('mjx-mfrac')) {
-                                            mfrac.style.fontSize = '1.5em';
+                        const adjustFontSize = (element) => {
+                            if (element) {
+                                element.querySelectorAll('mjx-mfrac').forEach(mfrac => {
+                                    if (mfrac.querySelector('mjx-mfrac')) {
+                                        mfrac.style.fontSize = '1.5em';
+                                    }
+                                });
+                            }
+                        };
+
+                        // Aplikovat úpravy na obě řešení
+                        adjustFontSize(reseni2);
+                        adjustFontSize(reseni4);
+
+                                            });
                                         }
-                                    });
-                                }
-                            };
-
-                            // Aplikovat úpravy na obě řešení
-                            adjustFontSize(reseni2);
-                            adjustFontSize(reseni4);
-
-                                                });
-                                            }
             }
         };
  
