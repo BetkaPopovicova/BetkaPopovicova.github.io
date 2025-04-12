@@ -211,7 +211,14 @@ footer {
 mjx-container {
     font-size: 1.5em;
 }
+.slozeny-zlomek {
+    font-size: 1.2em; /* Můžete zmenšit velikost písma pro menší výšku */
+    line-height: 1.2; /* Snížení mezery mezi řádky */
+    max-height: 3em; /* Omezení výšky divu */
+    overflow: hidden; /* Skrytí přetékajícího obsahu, pokud se stále zobrazuje příliš mnoho */
+}
 
-#reseni4{
-    max-height: 50px !important;
+.slozeny-zlomek .mathjax {
+    font-size: 1.2em; /* Můžete také upravit velikost písma pro MathJax */
+    line-height: 1.1; /* Zmenšení výšky řádků pro lepší zobrazení složeného zlomku */
 }
