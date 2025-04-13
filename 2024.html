@@ -14,14 +14,14 @@
                 inlineMath: [['$', '$']],
                 packages: {'[+]': ['base', 'cancel', 'color', 'ams']}
             },
-            svg: {
-                fontCache: 'global'
+            chtml: {
+                fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2'
             }
         };
     
         document.addEventListener('DOMContentLoaded', function () {
             var script = document.createElement('script');
-            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js'; // Změna zpět na tex-chtml.js
             script.async = true;
             document.head.appendChild(script);
         });
