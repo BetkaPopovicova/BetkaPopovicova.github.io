@@ -58,7 +58,13 @@
             document.head.appendChild(script);
         });
     </script>
-    
+    <script type="text/javascript">
+        if (typeof MathJax === "undefined") {
+            console.log("MathJax není načtený!");
+        } else {
+            console.log("MathJax je načtený!");
+        }
+    </script>
 </head>
 <body>
     <header>
