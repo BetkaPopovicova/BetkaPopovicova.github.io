@@ -181,13 +181,6 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Styly pro složené zlomky */
-.slozeny-zlomek {
-    min-width: 700px;
-    min-height: 500px;
-}
-
-
 
 .arrow-down, .arrow-up {
     font-size: 4em;
