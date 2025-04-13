@@ -216,9 +216,9 @@ mjx-container {
 }
 
 .mjx-container {
-    font-size: 0.8em !important;
-    line-height: 1 !important;
-    vertical-align: middle !important;
+    display: inline-block;
+    width: 100%;
+    height: auto;  /* Umožní automatické přizpůsobení výšky podle obsahu */
 }
 
 .mjx-svg {
