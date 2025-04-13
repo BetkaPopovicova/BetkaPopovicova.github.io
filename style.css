@@ -130,7 +130,6 @@ footer {
     background-color: #f0f0f0;
 }
 
-/* Styly pro matematické výrazy */
 .matematicky-vyraz {
     background-color: white;
     padding: 20px;
@@ -138,31 +137,28 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;     /* Zarovnání obsahu na střed */
     justify-content: center;
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
     box-sizing: border-box;
     overflow: hidden;
+    text-align: center;      /* Zarovnání textu i MathJaxu */
 }
 
 .matematicky-vyraz p {
     font-size: 1.2em;
     color: #333;
     line-height: 1.6;
-    text-align: center;
-    width: 100%;
     margin: 0;
 }
 
-/* Styl pro složené zlomky – použij všude, kde je třeba víceroúrovňové zlomky */
 .slozeny-zlomek {
-    font-size: 1.2em;
-    line-height: 1.2;
     width: 100%;
+    text-align: center;      /* Důležité: zarovnání výrazu */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Důležité: zarovná zlomek doprostřed */
     align-items: center;
     margin: 10px 0;
 }
@@ -170,27 +166,24 @@ footer {
 .slozeny-zlomek .mathjax {
     font-size: 1.2em;
     line-height: 1.1;
-    width: 100%;
-    text-align: center;
 }
 
 mjx-container {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
     height: auto;
     min-height: 2.5em;
     text-align: center;
-    overflow-x: auto;
-    overflow-y: visible;
     box-sizing: border-box;
 }
 
-/* Upravíme svg výstup MathJaxu tak, aby nerušil vzhled */
 .mjx-svg {
     height: auto !important;
     width: auto !important;
     max-width: 100%;
 }
+
 
 .matematicky-vyraz .button-container {
     display: flex;
