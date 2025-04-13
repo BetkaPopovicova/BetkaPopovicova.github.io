@@ -94,6 +94,19 @@ footer {
     margin-bottom: 20px;
     border-radius: 5px;
 }
+.arrow-down, .arrow-up {
+    font-size: 4em;
+    line-height: 1.5;
+}
+
+/* Pro mobilní zařízení */
+@media (max-width: 600px) {
+    .arrow-down, .arrow-up {
+        font-size: 3em;  /* Zmenšíme šipky */
+        line-height: 1.2; /* Zkrátíme výšku šipek */
+    }
+}
+
 
 /* Styly pro roky jako tlačítka */
 .rok-container {
@@ -126,9 +139,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .matematicky-vyraz p {
@@ -137,91 +153,41 @@ footer {
     line-height: 1.6;
     text-align: center;
     width: 100%;
+    margin: 0;
 }
 
-.cervena {
-    color: red;
-}
-
-.modra {
-    color: blue;
-}
-
-.zelena {
-    color: green;
-}
-
-.matematicky-vyraz .button-container {
+/* Styl pro složené zlomky – použij všude, kde je třeba víceroúrovňové zlomky */
+.slozeny-zlomek {
+    font-size: 1.2em;
+    line-height: 1.2;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-
-.matematicky-vyraz button {
-    padding: 12px 25px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
-    margin: 0 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.matematicky-vyraz button:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);
-}
-
-.matematicky-vyraz button:active {
-    transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-
-.arrow-down, .arrow-up {
-    font-size: 4em;
-    line-height: 1.5;
-}
-
-/* Pro mobilní zařízení */
-@media (max-width: 600px) {
-    .arrow-down, .arrow-up {
-        font-size: 3em;  /* Zmenšíme šipky */
-        line-height: 1.2; /* Zkrátíme výšku šipek */
-    }
-}
-
-.zadani-vetsi {
-    font-size: 1.5em;
-}
-
-
-
-mjx-container {
-    font-size: 1.5em;
-}
-.slozeny-zlomek {
-    font-size: 1.2em; /* Můžete zmenšit velikost písma pro menší výšku */
-    line-height: 1.2; /* Snížení mezery mezi řádky */
-    
+    align-items: center;
+    margin: 10px 0;
 }
 
 .slozeny-zlomek .mathjax {
-    font-size: 1.2em; /* Můžete také upravit velikost písma pro MathJax */
-    line-height: 1.1; /* Zmenšení výšky řádků pro lepší zobrazení složeného zlomku */
+    font-size: 1.2em;
+    line-height: 1.1;
+    width: 100%;
+    text-align: center;
 }
 
-.mjx-container {
+mjx-container {
     display: block;
     width: 100%;
-    height: auto;  /* Umožní automatické přizpůsobení výšky podle obsahu */
+    height: auto;
+    min-height: 2.5em;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    box-sizing: border-box;
 }
 
+/* Upravíme svg výstup MathJaxu tak, aby nerušil vzhled */
 .mjx-svg {
     height: auto !important;
-   
+    width: auto !important;
+    max-width: 100%;
 }
