@@ -135,13 +135,12 @@ footer {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    justify-content: center;
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
     box-sizing: border-box;
     overflow: hidden;
-    text-align: center;      /* Zarovnání textu i MathJaxu */
+    text-align: center; /* Zarovnání textu a MathJaxu */
 }
 
 .matematicky-vyraz p {
@@ -153,18 +152,18 @@ footer {
 
 .slozeny-zlomek {
     width: 100%;
-    text-align: center;      /* Důležité: zarovnání výrazu */
-    justify-content: center; /* Důležité: zarovná zlomek doprostřed */
-    align-items: center;
     margin: 10px 0;
+    text-align: center;
 }
 
 .slozeny-zlomek .mathjax {
     font-size: 1.2em;
     line-height: 1.1;
+    display: inline-block;
 }
 
 mjx-container {
+    display: inline-block;
     width: auto;
     max-width: 100%;
     height: auto;
@@ -178,6 +177,7 @@ mjx-container {
     width: auto !important;
     max-width: 100%;
 }
+
 
 
 .matematicky-vyraz .button-container {
