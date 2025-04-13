@@ -207,7 +207,7 @@ mjx-container {
 .slozeny-zlomek {
     font-size: 1.2em; /* Můžete zmenšit velikost písma pro menší výšku */
     line-height: 1.2; /* Snížení mezery mezi řádky */
-    max-height: 3em; /* Omezení výšky divu */
+    
 }
 
 .slozeny-zlomek .mathjax {
@@ -223,5 +223,5 @@ mjx-container {
 
 .mjx-svg {
     height: auto !important;
-    max-height: 2.5em; /* nastav dle potřeby */
+   
 }
