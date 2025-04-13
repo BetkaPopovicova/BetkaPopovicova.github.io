@@ -166,8 +166,6 @@ mjx-container {
     max-width: 100%;
 }
 
-
-
 .matematicky-vyraz .button-container {
     display: flex;
     justify-content: center;
@@ -198,3 +196,10 @@ mjx-container {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.slozeny-zlomek mjx-container {
+    min-height: auto !important;
+}
+
+.slozeny-zlomek mjx-svg {
+    min-height: auto !important;
+}
