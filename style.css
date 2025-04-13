@@ -150,27 +150,6 @@ footer {
     margin: 0;
 }
 
-.slozeny-zlomek mjx-container {
-    text-align: center !important;
-    margin: 0 auto; /* Pro horizontální centrování */
-    display: block; /* Zajistí, že se prvek chová jako blok */
-}
-
-.slozeny-zlomek mjx-svg {
-    display: block;
-    margin: 0 auto;
-}
-
-.slozeny-zlomek mjx-container svg {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.slozeny-zlomek mjx-container svg * {
-    text-align: center;
-}
-
 mjx-container {
     display: inline-block;
     width: auto;
@@ -219,6 +198,3 @@ mjx-container {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-element.slozeny-zlomek {
-    height: auto;
-}
