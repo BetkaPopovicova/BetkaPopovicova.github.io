@@ -150,18 +150,15 @@ footer {
     margin: 0;
 }
 
-.slozeny-zlomek {
-    width: 100%;
-    margin: 10px 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+.slozeny-zlomek mjx-container {
+    text-align: center !important;
+    margin: 0 auto; /* Pro horizontální centrování */
+    display: block; /* Zajistí, že se prvek chová jako blok */
 }
 
-.slozeny-zlomek .mathjax {
-    font-size: 1.2em;
-    line-height: 1.1;
-    display: inline-block;
+.slozeny-zlomek mjx-svg {
+    display: block;
+    margin: 0 auto;
 }
 
 mjx-container {
