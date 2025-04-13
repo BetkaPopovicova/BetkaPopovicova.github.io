@@ -208,7 +208,6 @@ mjx-container {
     font-size: 1.2em; /* Můžete zmenšit velikost písma pro menší výšku */
     line-height: 1.2; /* Snížení mezery mezi řádky */
     max-height: 3em; /* Omezení výšky divu */
-    overflow: hidden; /* Skrytí přetékajícího obsahu, pokud se stále zobrazuje příliš mnoho */
 }
 
 .slozeny-zlomek .mathjax {
