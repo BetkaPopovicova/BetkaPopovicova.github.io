@@ -157,7 +157,7 @@ footer {
 .slozeny-zlomek {
     width: 100%;
     text-align: center;      /* Důležité: zarovnání výrazu */
-    display: flex;
+    display: block;
     justify-content: center; /* Důležité: zarovná zlomek doprostřed */
     align-items: center;
     margin: 10px 0;
