@@ -60,3 +60,39 @@
         </div>
 </body>
 </html>
+
+
+startup: {
+    pageReady: function () {
+        return MathJax.startup.defaultPageReady().then(() => {
+            // Zvětšit složený zlomek ve slozeny-zlomek
+            const slozenyZlomek = document.querySelector('.slozeny-zlomek p');
+            if (slozenyZlomek) {
+                slozenyZlomek.querySelectorAll('mjx-mfrac').forEach(mfrac => {
+                    mfrac.style.fontSize = '1.5em';
+                });
+            }
+
+            // Zvětšit pouze složený zlomek v řešení 2 a 4
+            const reseni2 = document.getElementById('reseni2');
+            const reseni4 = document.getElementById('reseni4');
+            const zadani4 = document.getElementById('zadani4')
+
+            const adjustFontSize = (element) => {
+                if (element) {
+                    element.querySelectorAll('mjx-mfrac').forEach(mfrac => {
+                        if (mfrac.querySelector('mjx-mfrac')) {
+                            mfrac.style.fontSize = '1.5em';
+                        }
+                    });
+                }
+            };
+
+            // Aplikovat úpravy na obě řešení
+            adjustFontSize(reseni2);
+            adjustFontSize(reseni4);
+            adjustFontSize(zadani4);
+        });
+    }
+}
+};

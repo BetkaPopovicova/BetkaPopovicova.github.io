@@ -16,45 +16,12 @@
             },
             svg: {
                 fontCache: 'global'
-            },
-            startup: {
-                pageReady: function () {
-                    return MathJax.startup.defaultPageReady().then(() => {
-                        // Zvětšit složený zlomek ve slozeny-zlomek
-                        const slozenyZlomek = document.querySelector('.slozeny-zlomek p');
-                        if (slozenyZlomek) {
-                            slozenyZlomek.querySelectorAll('mjx-mfrac').forEach(mfrac => {
-                                mfrac.style.fontSize = '1.5em';
-                            });
-                        }
-    
-                        // Zvětšit pouze složený zlomek v řešení 2 a 4
-                        const reseni2 = document.getElementById('reseni2');
-                        const reseni4 = document.getElementById('reseni4');
-                        const zadani4 = document.getElementById('zadani4')
-    
-                        const adjustFontSize = (element) => {
-                            if (element) {
-                                element.querySelectorAll('mjx-mfrac').forEach(mfrac => {
-                                    if (mfrac.querySelector('mjx-mfrac')) {
-                                        mfrac.style.fontSize = '1.5em';
-                                    }
-                                });
-                            }
-                        };
-    
-                        // Aplikovat úpravy na obě řešení
-                        adjustFontSize(reseni2);
-                        adjustFontSize(reseni4);
-                        adjustFontSize(zadani4);
-                    });
-                }
             }
         };
     
         document.addEventListener('DOMContentLoaded', function () {
             var script = document.createElement('script');
-            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js'; // Změna na tex-svg.js
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
             script.async = true;
             document.head.appendChild(script);
         });
