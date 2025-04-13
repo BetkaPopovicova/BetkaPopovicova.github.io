@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zlomky 2024</title>
-   
+    <link rel="stylesheet" href="style.css">
     <script>
         window.MathJax = {
             tex: {
@@ -40,6 +40,25 @@
             alert("Video řešení bude brzy dostupné.");
         }
     </script>
+    <script defer>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                packages: {'[+]': ['base', 'ams', 'cancel', 'color']}
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            }
+        };
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js';
+            script.defer = true; // This makes sure it loads after content
+            document.head.appendChild(script);
+        });
+    </script>
+    
 </head>
 <body>
     <header>
