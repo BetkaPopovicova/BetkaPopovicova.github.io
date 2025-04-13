@@ -161,6 +161,16 @@ footer {
     margin: 0 auto;
 }
 
+.slozeny-zlomek mjx-container svg {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slozeny-zlomek mjx-container svg * {
+    text-align: center;
+}
+
 mjx-container {
     display: inline-block;
     width: auto;
