@@ -222,3 +222,14 @@ mjx-container {
     font-size: 1.2em; /* Můžete také upravit velikost písma pro MathJax */
     line-height: 1.1; /* Zmenšení výšky řádků pro lepší zobrazení složeného zlomku */
 }
+
+.mjx-container {
+    font-size: 0.8em !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+}
+
+.mjx-svg {
+    height: auto !important;
+    max-height: 2.5em; /* nastav dle potřeby */
+}
