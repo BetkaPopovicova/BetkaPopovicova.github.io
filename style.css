@@ -135,9 +135,6 @@ footer {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: block;
-    flex-direction: column;
-    align-items: center;     /* Zarovnání obsahu na střed */
     justify-content: center;
     width: 80%;
     max-width: 600px;
@@ -157,7 +154,6 @@ footer {
 .slozeny-zlomek {
     width: 100%;
     text-align: center;      /* Důležité: zarovnání výrazu */
-    display: block;
     justify-content: center; /* Důležité: zarovná zlomek doprostřed */
     align-items: center;
     margin: 10px 0;
@@ -169,7 +165,6 @@ footer {
 }
 
 mjx-container {
-    display: block;
     width: auto;
     max-width: 100%;
     height: auto;
