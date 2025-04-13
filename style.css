@@ -195,10 +195,6 @@ mjx-container {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.slozeny-zlomek mjx-container {
-    min-height: auto !important;
-}
-
-.slozeny-zlomek mjx-svg {
+#druhy{
     min-height: auto !important;
 }
