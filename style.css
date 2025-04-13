@@ -216,7 +216,7 @@ mjx-container {
 }
 
 .mjx-container {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: auto;  /* Umožní automatické přizpůsobení výšky podle obsahu */
 }
