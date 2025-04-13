@@ -191,3 +191,33 @@ mjx-container {
     width: auto !important;
     max-width: 100%;
 }
+
+.matematicky-vyraz .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.matematicky-vyraz button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.matematicky-vyraz button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.matematicky-vyraz button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
