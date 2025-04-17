@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zlomky 2022</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                packages: {'[+]': ['base', 'ams', 'cancel', 'color']}
+            },
+        };
+        function zobrazReseni(reseniId, zobrazReseniButtonId) {
+            var reseni = document.getElementById(reseniId);
+            var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
+
+            if (reseni.style.display === "none") {
+                reseni.style.display = "block";
+                zobrazReseniButton.textContent = "Skrýt řešení";
+            } else {
+                reseni.style.display = "none";
+                zobrazReseniButton.textContent = "Zobraz řešení";
+            }
+        }
+
+        function zobrazVideoReseni() {
+            alert("Video řešení bude brzy dostupné.");
+        }
+    </script>
+   <script id="MathJax-script" async
+   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+ </script>
+</head>
+<body>
+    <header>
+        <h1>Zlomky z roku 2022</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>1. řádný termín</h2>
+        </section>
+        <div class="matematicky-vyraz">
+            <p>
+                $\frac{8}{5} \cdot \left(\frac{5}{6} \cdot \frac{7}{10} - \frac{5}{6}\right)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni1" style="display: none;">
+                <br>
+                <p>
+                    $
+                    =\frac{8}{5} \cdot \left(\frac{\cancel{\color{red}5}}{6} \cdot \frac{7}{\cancel{\color{red}10}} - \frac{5}{6}\right) 
+                    =\frac{8}{5} \cdot \left(\frac{1}{6} \cdot \frac{7}{2} - \frac{5}{6}\right) 
+                    $
+                    $
+                    =\frac{8}{5} \cdot \left(\frac{7}{12}- \frac{5}{6}\right) 
+                    =\frac{8}{5} \cdot \left(\frac{7\,-\,5\,\cdot\,2}{12}\right) 
+                    =\frac{8}{5} \cdot \frac{-3}{12} 
+                    =\frac{8}{5} \cdot \frac{\cancel{\color{red}-3}}{\cancel{\color{\red}12}}
+                    $
+                    $
+                    =\frac{8}{5} \cdot \frac{-1}{4}
+                    =\frac{\cancel{\color{red}8}}{5} \cdot \frac{-1}{\cancel{\color{red}4}} 
+                    =\frac{2}{5} \cdot \frac{-1}{1} 
+                    =-\frac{2}{5}
+                    $
+                </p>
+            </div>
+        </div>
+    </main>
+    </body>
+    </html>
