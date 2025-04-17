@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zlomky 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                packages: {'[+]': ['base', 'ams', 'cancel', 'color']}
+            },
+        };
+        function zobrazReseni(reseniId, zobrazReseniButtonId) {
+            var reseni = document.getElementById(reseniId);
+            var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
+
+            if (reseni.style.display === "none") {
+                reseni.style.display = "block";
+                zobrazReseniButton.textContent = "Skrýt řešení";
+            } else {
+                reseni.style.display = "none";
+                zobrazReseniButton.textContent = "Zobraz řešení";
+            }
+        }
+
+        function zobrazVideoReseni() {
+            alert("Video řešení bude brzy dostupné.");
+        }
+    </script>
+   <script id="MathJax-script" async
+   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+ </script>
+</head>
+<body>
+    <header>
+        <h1>Zlomky z roku 2024</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>1. řádný termín</h2>
+        </section>
+
+        
+        <div class="matematicky-vyraz">
+            <p>
+                $\left(\frac{5}{8} \cdot \frac{10}{9} - \frac{4}{9}\right) : \left(8 \cdot \frac{1}{6}\right)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni1" style="display: none;">
+                <br>
+                <p>
+                    $
+                    =\left(\frac{5}{\cancel{\color{red}8}} \cdot \frac{\cancel{\color{red}10}}{9} - \frac{4}{9}\right) : \left(\frac{8}{1} \cdot \frac{1}{6}\right)
+                    =\left(\frac{5}{4} \cdot \frac{5}{9} - \frac{4}{9}\right) : \left(\frac{\cancel{\color{blue}8}}{1} \cdot \frac{1}{\cancel{\color{blue}6}}\right) 
+                    =\left(\frac{25}{36} - \frac{4}{9}\right) : \left(\frac{4}{1} \cdot \frac{1}{3} \right) 
+                    =\frac{25\,-\,4\,\cdot\,4}{36} : \frac{4}{3} 
+                    =\frac{25\,-\,16}{36} \cdot \frac{3}{4} 
+                    =\frac{\cancel{\color{green}9}}{\cancel{\color{green}36}} \cdot \frac{3}{4} 
+                    =\frac{1}{4} \cdot \frac{3}{4} 
+                    =\frac{3}{16}
+                    $
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
