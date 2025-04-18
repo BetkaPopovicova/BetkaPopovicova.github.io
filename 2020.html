@@ -57,7 +57,7 @@
                 <p>
                     $
                     =\left(\frac{1\,\cdot\,3\,+\,5\,\cdot\,2}{12}\right) \cdot \left(\frac{5\,\cdot\,2-\,1\,\cdot\,13}{26}\right) 
-                    =\left(\frac{3\,+\,10}{12}\right) \cdot \left(\frac{5\,\cdot\,2\,-\,13}{26}\right)
+                    =\left(\frac{3\,+\,10}{12}\right) \cdot \left(\frac{10\,-\,13}{26}\right)
                     $
 
                     $
@@ -72,6 +72,57 @@
                 </p>
             </div>
         </div>
+        <div class="matematicky-vyraz">
+            <p>
+                $$\frac{\frac{6}{5}}{\frac{7}{6} \cdot 4 - 4 \cdot \frac{5}{12}}$$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni2" style="display: none;">
+                <br>
+                <p>
+                    $$
+                    =\frac{\frac{6}{5}}{\frac{7}{6} \cdot \frac{4}{1} - \frac{4}{1} \cdot \frac{5}{12}}
+                    =\frac{\frac{6}{5}}{\frac{7}{\cancel{\color{red}6}} \cdot \frac{\cancel{\color{red}4}}{1} - \frac{\cancel{\color{blue}4}}{1} \cdot \frac{5}{\cancel{\color{blue}12}}} 
+                    =\frac{\frac{6}{5}}{\frac{7}{3} \cdot \frac{2}{1} - \frac{1}{1} \cdot \frac{5}{3}}
+                    $$
+
+                    $$
+                    =\frac{\frac{6}{5}}{\frac{14}{3} - \frac{5}{3}} 
+                    =\frac{\frac{6}{5}}{\frac{9}{3}} 
+                    =\frac{\frac{6}{5}}{\frac{\cancel{\color{red}9}}{\cancel{\color{red}3}}} 
+                    =\frac{\frac{6}{5}}{\frac{3}{1}}
+                    $$
+
+                    $
+                    =\frac{6}{5} \cdot \frac{1}{3} 
+                    =\frac{\cancel{\color{green}6}}{5} \cdot \frac{1}{\cancel{\color{green}3}}
+                    =\frac{2}{5} \cdot \frac{1}{1} 
+                    =\frac{2}{5}
+                    $
+                </p>
+            </div>
+        </div>
+        <section>
+            <h2>Ilustrační test</h2>
+        </section>
+        <div class="matematicky-vyraz">
+            <p>
+                $\left(\frac{1}{4} + \frac{5}{6}\right) \cdot \left(\frac{5}{13} - \frac{1}{2}\right)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni3" style="display: none;">
+                <br>
+                <p>
+                </p>
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
