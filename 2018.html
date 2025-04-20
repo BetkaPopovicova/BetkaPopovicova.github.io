@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zlomky 2019</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                packages: {'[+]': ['base', 'ams', 'cancel', 'color']}
+            },
+        };
+        function zobrazReseni(reseniId, zobrazReseniButtonId) {
+            var reseni = document.getElementById(reseniId);
+            var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
+
+            if (reseni.style.display === "none") {
+                reseni.style.display = "block";
+                zobrazReseniButton.textContent = "Skrýt řešení";
+            } else {
+                reseni.style.display = "none";
+                zobrazReseniButton.textContent = "Zobraz řešení";
+            }
+        }
+
+        function zobrazVideoReseni() {
+            alert("Video řešení bude brzy dostupné.");
+        }
+    </script>
+   <script id="MathJax-script" async
+   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+ </script>
+</head>
+<body>
+    <header>
+        <h1>Zlomky z roku 2019</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>1. řádný termín</h2>
+        </section>
+
+        
+        <div class="matematicky-vyraz">
+            <p>
+                $$\frac{\frac{4}{1+2} - 1}{1+2}$$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni1" style="display: none;">
+                <br>
+                <p>
+                    $$
+                    =\frac{\frac{4}{3} - 1}{3} 
+                    =\frac{\frac{4\,-\,1\,cdot\,3}{3}}{\frac{3}{1}} 
+                    =\frac{\frac{4\,-\,3}{3}}{\frac{3}{1}} 
+                    =\frac{\frac{1}{3}}{\frac{3}{1}} 
+                    $$
+
+                    $
+                    =\frac{1}{3} \cdot \frac{1}{3} 
+                    =\frac{1}{9}
+                    $
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
