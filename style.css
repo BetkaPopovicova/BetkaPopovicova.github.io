@@ -199,20 +199,26 @@ mjx-container {
     min-height: auto !important;
 }
 
+
 section ul {
-    list-style: none; /* Odstraníme výchozí odrážky */
-    padding-left: 0; /* Odstraníme výchozí odsazení */
+    list-style: none;
+    padding-left: 0;
+    display: flex; /* Umístíme položky vedle sebe */
+    flex-wrap: wrap; /* Pokud se nevejdou, zalomí se na další řádek */
+    justify-content: center; /* Zarovnáme položky na střed */
+    gap: 20px; /* Mezera mezi položkami */
 }
 
 section ul li {
-    display: flex; /* Zarovnáme název a tlačítko do řádku */
-    justify-content: space-between; /* Umístíme název vlevo a tlačítko vpravo */
+    display: flex; /* Uvnitř každé položky zarovnáme název a tlačítko vedle sebe */
     align-items: center; /* Vertikálně zarovnáme název a tlačítko */
-    margin-bottom: 15px;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee; /* Oddělíme jednotlivé položky linkou */
+    gap: 15px; /* Mezera mezi názvem a tlačítkem */
+    margin-bottom: 0; /* Odstraníme spodní okraj, mezery řeší 'gap' na 'ul' */
+    padding: 15px;
+    border: 1px solid #ddd; /* Přidáme rámeček pro lepší vizuální oddělení */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Jemné pozadí pro každou položku */
 }
-
 .small-button {
     padding: 8px 15px; /* Menší padding pro menší tlačítka */
     font-size: 0.9em; /* Menší písmo */
