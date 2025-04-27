@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -102,8 +103,8 @@ footer {
 /* Pro mobilní zařízení */
 @media (max-width: 600px) {
     .arrow-down, .arrow-up {
-        font-size: 3em;  /* Zmenšíme šipky */
-        line-height: 1.2; /* Zkrátíme výšku šipek */
+        font-size: 3em;
+        line-height: 1.2;
     }
 }
 
@@ -140,7 +141,7 @@ footer {
     margin: 20px auto;
     box-sizing: border-box;
     overflow: hidden;
-    text-align: center; /* Zarovnání textu a MathJaxu */
+    text-align: center;
 }
 
 .matematicky-vyraz p {
@@ -217,6 +218,8 @@ mjx-container {
     margin: 0 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .zeleny:hover {
@@ -232,43 +235,284 @@ mjx-container {
 /* ... tvůj stávající CSS kód ... */
 
 .tlacitko-obal {
-    position: relative; /* Abychom mohli absolutně pozicovat 'dalsi-tlacitka' uvnitř */
-    display: inline-block; /* Aby se obal přizpůsobil velikosti tlačítka */
+    position: relative;
+    display: inline-block;
+    margin: 10px;
 }
 
 .dalsi-tlacitka {
-    display: none; /* Skryjeme další tlačítka na začátku */
-    position: absolute; /* Absolutně pozicujeme vzhledem k 'tlacitko-obal' */
-    top: 100%; /* Umístíme je pod hlavní tlačítko */
-    left: 50%; /* Zarovnáme vodorovně na střed */
-    transform: translateX(-50%); /* Jemné doladění vodorovného zarovnání */
-    background-color: white; /* Pozadí pro další tlačítka */
-    border: 1px solid #ccc;
-    border-top: none; /* Odstraníme horní okraj, aby navazoval na hlavní tlačítko */
-    border-radius: 0 0 5px 5px; /* Zaoblíme spodní rohy */
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color: transparent;
     padding: 10px;
-    z-index: 10; /* Zajistíme, aby se zobrazila nad ostatním obsahem */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    white-space: nowrap; /* Zabráníme zalomení tlačítek na nový řádek */
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    min-width: 150px;
 }
 
 .tlacitko-obal:hover .dalsi-tlacitka {
-    display: flex; /* Zobrazíme další tlačítka při najetí */
-    flex-direction: row; /* Uspořádáme tlačítka vedle sebe */
-    gap: 10px; /* Mezera mezi dalšími tlačítky */
-    justify-content: center; /* Zarovnáme tlačítka na střed */
+    display: flex;
 }
 
-.maly-zeleny {
-    background-color: #81c784; /* Světlejší odstín zelené pro menší tlačítka */
+.rok-tlacitko.hlavni {
+    padding: 12px 25px;
+    background-color: #4CAF50;
     color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #4CAF50;
+}
+
+.rok-tlacitko.hlavni:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.rok-tlacitko.hlavni:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rok-tlacitko.maly-zeleny {
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 20px;
     text-decoration: none;
     font-size: 0.9em;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: 3px solid #4CAF50;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    min-width: 90px;
+    justify-content: center;
 }
 
-.maly-zeleny:hover {
-    background-color: #66bb6a; /* Ještě tmavší hover efekt */
+.rok-tlacitko.maly-zeleny:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.rok-tlacitko.maly-zeleny:active {
+    background-color: #d0d0d0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transform: translateY(0);
+}
+
+.material-icons {
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dalsi-tlacitka {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    min-width: 150px;
+}
+
+.tlacitko-obal:hover .dalsi-tlacitka {
+    display: flex;
+}
+
+.rok-tlacitko.hlavni:active + .dalsi-tlacitka {
+    display: flex;
+}
+
+.tlacitko-obal-zavorky .dalsi-tlacitka {
+    left: 0;
+    transform: translateX(0);
+}
+.tlacitko-obal-vyrazy .dalsi-tlacitka{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tlacitko-obal-vzorce .dalsi-tlacitka {
+    right: 0;
+    transform: translateX(0);
+}
+
+/* New styles for positioning */
+.tlacitko-obal-zavorky .dalsi-tlacitka {
+    left: 0;
+    transform: translateX(0);
+}
+
+.tlacitko-obal-vyrazy .dalsi-tlacitka {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tlacitko-obal-vzorce .dalsi-tlacitka {
+    right: 0;
+    transform: translateX(0);
+}
+
+/* Ensure relative positioning on parent */
+.tlacitko-obal {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.dalsi-tlacitka {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    white-space: nowrap;
+    min-width: 150px;
+    padding: 10px 0;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.tlacitko-obal:hover .dalsi-tlacitka {
+    display: flex;
+}
+
+.vyrazy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+.tlacitko-obal-zavorky,
+.tlacitko-obal-vyrazy,
+.tlacitko-obal-vzorce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+.tlacitko-obal-zavorky .dalsi-tlacitka {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tlacitko-obal-vyrazy .dalsi-tlacitka {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tlacitko-obal-vzorce .dalsi-tlacitka {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Стиль для кнопок .dalsi-tlacitka */
+.dalsi-tlacitka .rok-tlacitko.maly-zeleny {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Media query for desktop - display buttons in a row */
+@media (min-width: 601px) {
+    .vyrazy-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .tlacitko-obal {
+        margin: 10px;
+        width: auto;
+    }
+    .dalsi-tlacitka {
+        flex-direction: row;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        display: none;
+        box-sizing: border-box;
+        min-width: max-content;
+    }
+    .tlacitko-obal:hover .dalsi-tlacitka{
+        display: flex;
+    }
+
+    .tlacitko-obal-zavorky,
+    .tlacitko-obal-vyrazy,
+    .tlacitko-obal-vzorce {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .tlacitko-obal-zavorky .dalsi-tlacitka,
+    .tlacitko-obal-vyrazy .dalsi-tlacitka,
+    .tlacitko-obal-vzorce .dalsi-tlacitka {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        box-sizing: border-box;
+        min-width: max-content;
+    }
+}
+
+/* Media query for mobile devices - align buttons to the right */
+@media (max-width: 600px) {
+    .dalsi-tlacitka {
+        align-items: flex-end;
+    }
+    .vyrazy-container {
+        align-items: flex-start;
+    }
+    .tlacitko-obal-zavorky .dalsi-tlacitka,
+    .tlacitko-obal-vyrazy .dalsi-tlacitka,
+    .tlacitko-obal-vzorce .dalsi-tlacitka {
+        left: 100%;
+        transform: translateX(-100%);
+    }
+}
+
+#vyrazy-s-promennou {
+    padding-bottom: 40px;
 }

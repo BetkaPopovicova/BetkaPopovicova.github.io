@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Připrav se na Přijímačky!</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header>
@@ -29,48 +31,63 @@
             </div>
         </section>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const tlacitkoObal = document.querySelector('.tlacitko-obal');
-                const dalsiTlacitka = document.querySelector('.dalsi-tlacitka');
-                const hlavniTlacitko = tlacitkoObal.querySelector('.rok-tlacitko');
-        
-                if (tlacitkoObal && dalsiTlacitka && hlavniTlacitko) {
-                    hlavniTlacitko.addEventListener('click', function(event) {
-                        event.preventDefault();
-        
-                        const jeZobrazene = dalsiTlacitka.style.display === 'flex';
-                        dalsiTlacitka.style.display = jeZobrazene ? 'none' : 'flex';
-                    });
-        
-                    tlacitkoObal.addEventListener('mouseleave', function() {
-                        dalsiTlacitka.style.display = 'none';
-                    });
-                }
-            });
-        </script>
-
-        <section>
-    <h2>Výrazy s proměnnou</h2>
-    <p class="explanation">
-        Na přijímačkách se často setkáte s úlohami, kde je násobení závorek důležitý pro další úpravy výrazů, ať už jde o vzorečky, nebo vytýkání. Proto vám doporučuju začít právě s tímhle.
-    </p>
-    <div class="rok-container">
-        <div class="tlacitko-obal">
-            <a href="vyrazy/zavorky.html" class="rok-tlacitko zeleny">Násobení závorek</a>
-            <div class="dalsi-tlacitka">
-                <a href="#" class="rok-tlacitko maly-zeleny">Procvičit</a>
-                <a href="#" class="rok-tlacitko maly-zeleny">Přijímačky</a>
+        <section id="vyrazy-s-promennou">
+            <h2>Výrazy s proměnnou</h2>
+            <p class="explanation">
+                Na přijímačkách se často setkáte s úlohami, kde je <strong>násobení závorek</strong> důležité pro další úpravy výrazů, ať už jde o vzorečky, nebo vytýkání. Proto Vám doporučuju začít právě s tímhle.
+            </p>
+            <div class="vyrazy-container">
+                <div class="tlacitko-obal tlacitko-obal-zavorky">
+                    <a class="rok-tlacitko zeleny hlavni">Násobení závorek</a>
+                    <div class="dalsi-tlacitka">
+                        <a href="" class="rok-tlacitko maly-zeleny">
+                            <span class="material-icons">school</span>
+                            Přijímačky
+                        </a>
+                        <a href="" class="rok-tlacitko maly-zeleny">
+                            <span class="material-icons">fitness_center</span>
+                            Procvičit
+                        </a>
+                    </div>
+                </div>
+                <div class="tlacitko-obal tlacitko-obal-vyrazy">
+                    <a class="rok-tlacitko zeleny hlavni">Vytýkání</a>
+                    <div class="dalsi-tlacitka">
+                        <a href="" class="rok-tlacitko maly-zeleny">
+                            <span class="material-icons">school</span>
+                            Přijímačky
+                        </a>
+                        <a href="" class="rok-tlacitko maly-zeleny">
+                            <span class="material-icons">fitness_center</span>
+                            Procvičit
+                        </a>
+                    </div>
+                </div>
+                <div class="tlacitko-obal tlacitko-obal-vzorce">
+                    <a class="rok-tlacitko zeleny hlavni">Vzorečky</a>
+                     <div class="dalsi-tlacitka">
+                        <a href="" class="rok-tlacitko maly-zeleny">
+                            <span class="material-icons">school</span>
+                            Přijímačky
+                        </a>
+                        <a href="" class="rok-tlacitko maly-zeleny">
+                            <span class="material-icons">fitness_center</span>
+                            Procvičit
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Připrav se na Přijímačky</p>
+            <p>&copy; <span id="dynamic-year"></span> Připrav se na Přijímačky</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('dynamic-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
