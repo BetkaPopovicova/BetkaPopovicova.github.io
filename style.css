@@ -228,3 +228,47 @@ mjx-container {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* ... tvůj stávající CSS kód ... */
+
+.tlacitko-obal {
+    position: relative; /* Abychom mohli absolutně pozicovat 'dalsi-tlacitka' uvnitř */
+    display: inline-block; /* Aby se obal přizpůsobil velikosti tlačítka */
+}
+
+.dalsi-tlacitka {
+    display: none; /* Skryjeme další tlačítka na začátku */
+    position: absolute; /* Absolutně pozicujeme vzhledem k 'tlacitko-obal' */
+    top: 100%; /* Umístíme je pod hlavní tlačítko */
+    left: 50%; /* Zarovnáme vodorovně na střed */
+    transform: translateX(-50%); /* Jemné doladění vodorovného zarovnání */
+    background-color: white; /* Pozadí pro další tlačítka */
+    border: 1px solid #ccc;
+    border-top: none; /* Odstraníme horní okraj, aby navazoval na hlavní tlačítko */
+    border-radius: 0 0 5px 5px; /* Zaoblíme spodní rohy */
+    padding: 10px;
+    z-index: 10; /* Zajistíme, aby se zobrazila nad ostatním obsahem */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    white-space: nowrap; /* Zabráníme zalomení tlačítek na nový řádek */
+}
+
+.tlacitko-obal:hover .dalsi-tlacitka {
+    display: flex; /* Zobrazíme další tlačítka při najetí */
+    flex-direction: row; /* Uspořádáme tlačítka vedle sebe */
+    gap: 10px; /* Mezera mezi dalšími tlačítky */
+    justify-content: center; /* Zarovnáme tlačítka na střed */
+}
+
+.maly-zeleny {
+    background-color: #81c784; /* Světlejší odstín zelené pro menší tlačítka */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.maly-zeleny:hover {
+    background-color: #66bb6a; /* Ještě tmavší hover efekt */
+}
