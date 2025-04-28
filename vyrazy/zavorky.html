@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zlomky 2018</title>
+    <title>Násobení závorek</title>
     <link rel="stylesheet" href="vyrazystyle.css">
     <script>
         window.MathJax = {
@@ -35,18 +35,21 @@
 </head>
 <body>
     <header>
-        <h1>Zlomky z roku 2018</h1>
+        <h1>Výrazy s proměnnou</h1>
     </header>
 
     <main class="container">
         <section>
-            <h2>1. řádný termín</h2>
+            <h2>Násobení závorek</h2>
         </section>
 
         
         <div class="matematicky-vyraz">
+            <p class="explanation">
+                Upravte na co nejjednodušší tvar bez závorek
+            </p>
             <p>
-                $$\frac{\frac{4}{1+2} - 1}{1+2}$$
+               $ 2\,-\,(\,n\,+\,2)\,\cdot\,(\,-n\,)\,+\,(\,3\,-\,n\,)\,\cdot\,(n\,+\,1)$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
@@ -55,9 +58,18 @@
             <div id="reseni1" style="display: none;">
                 <br>
                 <p>
+                    $2 $
                 </p>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="dynamic-year"></span> Připrav se na Přijímačky</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('dynamic-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
