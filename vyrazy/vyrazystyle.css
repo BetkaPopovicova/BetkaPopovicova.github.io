@@ -131,3 +131,7 @@ mjx-container {
     margin-bottom: 20px;
     border-radius: 5px;
 }
+
+p {
+    line-height: 1.2;
+  }
