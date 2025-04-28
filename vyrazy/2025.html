@@ -111,6 +111,36 @@
             </div>
         </div>
 
+        <section>
+            <h2>2. řádný termín</h2>
+        </section>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Upravte na co nejjednodušší tvar bez závorek
+            </p>
+            <p>
+                $x \cdot 3x\,-\,2x \cdot 3\,-\,(x\,-\,3)^2$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni4" style="display: none;">
+                <br>
+                <p>
+                    $3x^{2}\,-\,6x\,-\,{\color{red}(x\,-\,3)^2}$ <br>
+                    musíme si dát pozor, objevuje se zde vzoreček a zároveň je před ním minus<br>
+                    $\color{red} (a\,-\,b)^2 = a^2\,-\,2ab\,+\,b^2$ <br>
+                    vyřešíme to tak, že si vzoreček nejprve umocníme, ale necháme v závorce <br>
+                    $3x^{2}\,-\,6x\,-\,{\color{red}(x^{2}\,-\,6x\,+\,9)}$
+                    a poté odstraníme závorku tím, že u každeho členu uvnitř změníme znaménko<br>
+                    $3x^{2}\,-\,6x\,-\,x^{2}\,+\,6x\,-\,9$<br>
+                    a pokračujeme v počítání &#128578;<br>
+                    ${\color{blue}3x^{2}}\,{\color{green}-\,6x}\,{\color{blue}-\,x^{2}}\,+\,{\color{green}6x}\,-\,9$<br>
+                    $2x^{2}\,-\,9$
+                </p>
+            </div>
+        </div>
 
         <div class="matematicky-vyraz">
             <p class="explanation">
