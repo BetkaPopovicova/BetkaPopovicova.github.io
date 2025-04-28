@@ -43,7 +43,23 @@
             <h2>1. řádný termín</h2>
         </section>
 
-        
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Do rámečku doplňtě taková čísla, aby platila rovnost
+            </p>
+            <p>
+               $\left(a\,+\,\square\right)^2 = a^2\,+\,18a\,+\,\square$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni1" style="display: none;">
+                <br>
+                <p>
+                </p>
+            </div>
+        </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
                 Upravte na co nejjednodušší tvar bez závorek
@@ -52,10 +68,10 @@
                $ 2\,-\,(n\,+\,2)\,\cdot\,(-n)\,+\,(3\,-\,n)\,\cdot\,(n\,+\,1)$
             </p>
             <div class="button-container">
-                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
                 <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
             </div>
-            <div id="reseni1" style="display: none;">
+            <div id="reseni3" style="display: none;">
                 <br>
                 <p>
                     $=2\,+\,(-n\,-\,2)\,\cdot\,(-n)\,+\,3n\,+\,3\,-\,n^{2}\,-\,n$
