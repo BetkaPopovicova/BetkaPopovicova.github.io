@@ -48,7 +48,7 @@
                 Zjednodušte (výsledný výraz nesmí obsahovat závorky)
             </p>
             <p>
-               $(a\,-\,\frac{a}{4})^2$
+               $(a-\frac{a}{4})^2$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
@@ -58,13 +58,13 @@
                 <br>
                 <p>
                     1. snazší cesta<br>
-                    $\left( a - \frac{a}{4} \right)^2 = \left( \frac{4a\,-\,a}{4} \right)^2 = \left( \frac{3a}{4} \right)^2 = \frac{9a^2}{16}$ <br>
+                    $\left( a - \frac{a}{4} \right)^2 = \left( \frac{4a-a}{4} \right)^2 = \left( \frac{3a}{4} \right)^2 = \frac{9a^2}{16}$ <br>
                     2. náročnější cesta<br>
-                    použijeme vzoreček $\color{red} (a\,-\,b)^2 = a^2\,-\,2ab\,+\,b^2$ <br>
-                    $a^2\,-\,2\,\cdot\,a\,\cdot\,\frac{a}{4}\,+\,\frac{a^2}{16}$ 
-                    $=a^2\,-\,\frac{\cancel{\color{blue}2}}{1}\,\cdot\,\frac{a}{1}\,\cdot\,\frac{a}{\cancel{\color{blue}4}}\,+\,\frac{a^2}{16}$ 
-                    $=a^2\,-\,\frac{a^2}{2}\,+\,\frac{a^2}{16}$
-                    $=\frac{16a^2\,-\,8a^2\,+\,a^2}{16}$ 
+                    použijeme vzoreček $\color{red} (a-b)^2 = a^2-2ab+b^2$ <br>
+                    $a^2-2\cdota\cdot\frac{a}{4}+\frac{a^2}{16}$ 
+                    $=a^2-\frac{\cancel{\color{blue}2}}{1}\cdot\frac{a}{1}\cdot\frac{a}{\cancel{\color{blue}4}}+\frac{a^2}{16}$ 
+                    $=a^2-\frac{a^2}{2}+\frac{a^2}{16}$
+                    $=\frac{16a^2-8a^2+a^2}{16}$ 
                     $=\frac{9a^2}{16}$
                 </p>
             </div>
@@ -74,7 +74,7 @@
                 Rozložte na součin podle vzorce
             </p>
             <p>
-               $9a^2\,-\,16$
+               $9a^2-16$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
@@ -83,8 +83,8 @@
             <div id="reseni2" style="display: none;">
                 <br>
                 <p>
-                    použijeme vzorec $\color{red} a^2\,-\,b^2 = (a\,+\,b) (a\,-\,b)$<br>
-                    $9a^2\,-\,16 = (3a\,+\,4) (3a\,-\,4)$
+                    použijeme vzorec $\color{red} a^2-b^2 = (a+b) (a-b)$<br>
+                    $9a^2-16 = (3a+4) (3a-4)$
                 </p>
             </div>
         </div>
@@ -92,7 +92,7 @@
             <p class="explanation">
                 Zjednodušte a výsledek rozložte na součin vytýkáním            </p>
             <p>
-               $(c\,-\,5)\,\cdot\,(2\,-\,3c)\,-\,(c\,-\,2c)\,\cdot\,3c\,-\,c\,\cdot\,7$
+               $(c-5)\cdot(2-3c)-(c-2c)\cdot3c-c\cdot7$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
@@ -101,12 +101,12 @@
             <div id="reseni3" style="display: none;">
                 <br>
                 <p>
-                    $2c\,-\,3c^2\,-\,10\,+\,15c\,-\,(-c)\,\cdot\,3c\,-\,7c$
-                    $=2c\,-\,3c^2\,-\,10\,+\,15c\,-\,(-3c^2)\,-\,7c$
-                    $=2c\,-\,3c^2\,-\,10\,+\,15c\,+\,3c^2\,-\,7c$
-                    $={\color{blue}2c}\,{\color{red}-\,3c^2}\,-\,10\,+\,{\color{blue}15c}\,+{\color{red}\,3c^2}\,{\color{blue}-\,7c}$
-                    $=10c\,-\,10$
-                    $=10(c\,-\,1)$
+                    $2c-3c^2-10+15c-(-c)\cdot3c-7c$
+                    $=2c-3c^2-10+15c-(-3c^2)-7c$
+                    $=2c-3c^2-10+15c+3c^2-7c$
+                    $={\color{blue}2c}{\color{red}-3c^2}-10+{\color{blue}15c}+{\color{red}3c^2}{\color{blue}-7c}$
+                    $=10c-10$
+                    $=10(c-1)$
                 </p>
             </div>
         </div>
@@ -118,7 +118,7 @@
                 Umocněte
             </p>
             <p>
-                $(-\,3\,-\,2x)^2$
+                $(-3-2x)^2$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
@@ -128,12 +128,12 @@
                 <br>
                 <p>
                     pozor toto není vzoreček, nejdříve se musíme výraz upravit vytknutím $(-1)$<br>
-                    $((-1)\,\cdot\,(3\,+\,2x))^2$
-                    $= (-1)^2\,\cdot\,(3\,+\,2x)^2$
-                    $= 1\,\cdot\,(3\,+\,2x)^2$<br>
-                    nyní použijeme vzoreček $\color{red} (a\,+\,b)^2 = a^2\,+\,2ab\,+\,b^2$ <br>
-                    $9\,+\,2\,\cdot\,3\,\cdot\,2x\,+\,4x^2$
-                    $=9\,+\,12x\,+\,4x^2$
+                    $((-1)\cdot(3+2x))^2$
+                    $= (-1)^2\cdot(3+2x)^2$
+                    $= 1\cdot(3+2x)^2$<br>
+                    nyní použijeme vzoreček $\color{red} (a+b)^2 = a^2+2ab+b^2$ <br>
+                    $9+2\cdot3\cdot2x+4x^2$
+                    $=9+12x+4x^2$
                 </p>
             </div>
         </div>
@@ -142,7 +142,7 @@
                 Upravte a rozložte na součin podle vzorce
             </p>
             <p>
-                $6\,400 - (x^2 - 3\,600)$
+                $6400 - (x^2 - 3600)$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton5" onclick="zobrazReseni('reseni5', 'zobrazReseniButton5')">Zobraz řešení</button>
@@ -151,9 +151,9 @@
             <div id="reseni5" style="display: none;">
                 <br>
                 <p>
-                    $6\,400 - x^2 + 3\,600$
-                    $= {\color{blue}6\,400} - x^2 + {\color{blue}3\,600}$ 
-                    $= 10\,000 - x^2$<br> 
+                    $6400 - x^2 + 3600$
+                    $= {\color{blue}6400} - x^2 + {\color{blue}3600}$ 
+                    $= 10000 - x^2$<br> 
                     použijeme vzoreček $\color{red}a^2 - b^2 = (a + b) (a - b)$
                 </p>
             </div>
