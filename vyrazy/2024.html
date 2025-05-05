@@ -215,6 +215,27 @@
                 </p>
             </div>
         </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Upravte a výsledný výraz rozložte na součin pomocí vzorců
+            </p>
+            <p>
+                $5 - (1 - x^2) - x \cdot 2x$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton8" onclick="zobrazReseni('reseni8', 'zobrazReseniButton8')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni8" style="display: none;">
+                <br>
+                <p>
+                    $5 - 1 + x^2 - 2x^2$ 
+                    $= 4 - x^2$<br>
+                    použijeme vzoreček $\color{red} a^2 - b^2 = (a + b) (a - b)$<br>
+                    $= (2 - x)(2 + x)$
+                </p>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container">
