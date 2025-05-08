@@ -347,8 +347,8 @@ form select:focus {
 }
 .alzb {
     /* Zajistí, že obrázek bude mít čtvercový tvar pro ořez do kruhu */
-    width: 100px; /* Nastavte požadovanou šířku a výšku */
-    height: 100px;
+    width: 80px; /* Nastavte požadovanou šířku a výšku */
+    height: 80px;
     object-fit: cover; /* Zajistí, že se obrázek vyplní čtverec bez deformace */
     border-radius: 100%; /* Vytvoří kruhový ořez (polovina šířky/výšky) */
   }
