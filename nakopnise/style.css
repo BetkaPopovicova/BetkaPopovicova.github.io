@@ -350,7 +350,7 @@ form select:focus {
     width: 80px; /* Nastavte požadovanou šířku a výšku */
     height: 80px;
     object-fit: cover; /* Zajistí, že se obrázek vyplní čtverec bez deformace */
-    border-radius: 100%; /* Vytvoří kruhový ořez (polovina šířky/výšky) */
+    border-radius: 50%; /* Vytvoří kruhový ořez (polovina šířky/výšky) */
   }
 
  .ome p {
