@@ -343,30 +343,3 @@ form select:focus {
 
 
 
-.teacher-info .ome .alzb {
-    max-width: 70px; /* Nastavte maximální šířku */
-    max-height: 70px; /* Nastavte maximální výšku */
-    width: auto; /* Nechte šířku automaticky dopočítat podle poměru stran */
-    height: auto; /* Nechte výšku automaticky dopočítat podle poměru stran */
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 15px;
- 
-}
-
-.ome div {
-    display: inline-block; /* Textový kontejner jako inline-block */
-    vertical-align: middle; /* Pro vertikální zarovnání */
-}
-
-
-.ome h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.ome p {
-    margin: 0;
-}
-  
-
