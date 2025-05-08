@@ -340,3 +340,12 @@ form select:focus {
 .read-more-button.expanded {
     margin-bottom: 0;
 }
+
+.alzb {
+    width: 80px;
+    height: 80px;
+}
+
+.info {
+    display: inline-block;
+}
