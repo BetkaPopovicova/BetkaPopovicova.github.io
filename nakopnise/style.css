@@ -346,13 +346,13 @@ form select:focus {
     align-items: center;
 }
 
-.alzb {
-    width: 80px; /* Nebo jiná požadovaná velikost */
-    height: 80px; /* Stejná hodnota jako width pro kruh */
+.teacher-info .ome .alzb {
+    width: 80px !important;
+    height: 80px !important;
     object-fit: cover;
-    border-radius: 50%;
-    margin-right: 15px; /* Pokud chcete mezeru */
-    display: block; /* Nebo inline-block, záleží na kontextu */
+    border-radius: 50% !important; /* Přidejte !important i pro border-radius */
+    margin-right: 15px;
+    display: block;
 }
 
 .ome div {
