@@ -347,12 +347,12 @@ form select:focus {
 }
 
 .alzb {
-    width: 80px;
-    height: 80px;
+    width: 80px; /* Nebo jiná požadovaná velikost */
+    height: 80px; /* Stejná hodnota jako width pro kruh */
     object-fit: cover;
     border-radius: 50%;
-    margin-right: 15px;
-    display: block; /* Zajistí, že obrázek je blokový element */
+    margin-right: 15px; /* Pokud chcete mezeru */
+    display: block; /* Nebo inline-block, záleží na kontextu */
 }
 
 .ome div {
