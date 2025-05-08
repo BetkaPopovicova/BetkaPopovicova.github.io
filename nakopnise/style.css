@@ -8,7 +8,7 @@ body {
     line-height: 1.7; /* Větší řádkování pro lepší čitelnost */
 }
 .container {
-    max-width: 1100px; /* Pro širší obsah */
+    max-width: auto; /* Pro širší obsah */
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -358,8 +358,10 @@ form select:focus {
 }
 
 .ome div {
-    /* Styly pro textový kontejner */
+    display: inline-block; /* Textový kontejner jako inline-block */
+    vertical-align: middle; /* Pro vertikální zarovnání */
 }
+
 
 .ome h3 {
     margin-top: 0;
