@@ -341,11 +341,16 @@ form select:focus {
     margin-bottom: 0;
 }
 
+.ome {
+    display: flex;
+}
 .alzb {
     /* Zajistí, že obrázek bude mít čtvercový tvar pro ořez do kruhu */
     width: 150px; /* Nastavte požadovanou šířku a výšku */
     height: 150px;
     object-fit: cover; /* Zajistí, že se obrázek vyplní čtverec bez deformace */
-    border-radius: 50%; /* Vytvoří kruhový ořez (polovina šířky/výšky) */
-    background-color: navy; /* Nastaví tmavě modré pozadí */
+    border-radius: 100%; /* Vytvoří kruhový ořez (polovina šířky/výšky) */
   }
+
+  
+
