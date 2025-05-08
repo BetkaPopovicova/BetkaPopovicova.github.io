@@ -341,10 +341,7 @@ form select:focus {
     margin-bottom: 0;
 }
 
-.ome {
-    display: flex;
-    align-items: center;
-}
+
 
 .teacher-info .ome .alzb {
     max-width: 70px; /* Nastavte maximální šířku */
