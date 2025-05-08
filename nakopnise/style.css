@@ -347,10 +347,12 @@ form select:focus {
 }
 
 .teacher-info .ome .alzb {
-    width: 80px !important;
-    height: 80px !important;
+    max-width: 70px; /* Nastavte maximální šířku */
+    max-height: 70px; /* Nastavte maximální výšku */
+    width: auto; /* Nechte šířku automaticky dopočítat podle poměru stran */
+    height: auto; /* Nechte výšku automaticky dopočítat podle poměru stran */
     object-fit: cover;
-    border-radius: 50% !important; /* Přidejte !important i pro border-radius */
+    border-radius: 50%;
     margin-right: 15px;
     display: block;
 }
