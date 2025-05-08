@@ -342,24 +342,30 @@ form select:focus {
 }
 
 .ome {
-    display: flex; /* Umožní umístit potomky vedle sebe */
-    align-items: center; /* Volitelné: pro vertikální zarovnání na střed */
+    display: flex;
+    align-items: center;
 }
+
 .alzb {
-    /* Zajistí, že obrázek bude mít čtvercový tvar pro ořez do kruhu */
-    width: 80px !important;
-    height: 80px !important;
-    object-fit: cover; /* Zajistí, že se obrázek vyplní čtverec bez deformace */
-    border-radius: 50%; /* Vytvoří kruhový ořez (polovina šířky/výšky) */
-  }
-
- .ome p {
-    margin: 0; /* Volitelné: pro odstranění výchozích okrajů odstavce */
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: block; /* Zajistí, že obrázek je blokový element */
 }
 
-.text {
-    display: block;
+.ome div {
+    /* Styly pro textový kontejner */
 }
 
+.ome h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.ome p {
+    margin: 0;
+}
   
 
