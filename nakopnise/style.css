@@ -357,5 +357,9 @@ form select:focus {
     margin: 0; /* Volitelné: pro odstranění výchozích okrajů odstavce */
 }
 
+.text {
+    display: block;
+}
+
   
 
