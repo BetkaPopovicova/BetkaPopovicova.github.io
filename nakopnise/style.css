@@ -342,7 +342,7 @@ form select:focus {
 }
 
 .ome {
-    display: flex;
+    display: inline-block;
 }
 .alzb {
     /* Zajistí, že obrázek bude mít čtvercový tvar pro ořez do kruhu */
