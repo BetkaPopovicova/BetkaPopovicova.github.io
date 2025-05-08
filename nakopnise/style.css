@@ -346,6 +346,10 @@ form select:focus {
     height: 80px;
 }
 
+.info p {
+    max width: 600px;
+}
+
 .info {
     display: inline-block;
 }
