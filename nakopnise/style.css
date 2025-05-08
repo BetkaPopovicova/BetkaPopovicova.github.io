@@ -1,0 +1,342 @@
+/* Moderní CSS pro webovou stránku */
+body {
+    font-family: 'Open Sans', sans-serif; /* Pro běžný text */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.7; /* Větší řádkování pro lepší čitelnost */
+}
+.container {
+    max-width: 1100px; /* Pro širší obsah */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background-color: #007bff; /* Modrá z letáku */
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Zešikmení */
+}
+header h1 {
+    font-family: 'Montserrat', sans-serif; /* Pro nadpisy */
+    font-size: 3.5em; /* Větší nadpis */
+    margin-bottom: 20px;
+    font-weight: 700;  /* Tučně */
+}
+header p {
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+.section h2 {
+    font-family: 'Montserrat', sans-serif; /* Pro nadpisy */
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    color: #343a40;
+    font-weight: 700; /* Tučně */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.section p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+.section.darker {
+    background-color: #f0f8ff; /* Světlejší modrá */
+}
+
+.course-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.course-details div {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    flex: 1 1 300px; /* Flexbox pro stejnou šířku a zalamování */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-details div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.course-details div h3 {
+    font-family: 'Montserrat', sans-serif; /* Pro nadpisy */
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.course-details div p {
+    font-size: 1.1em;
+}
+ .teacher-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.teacher-info img {
+    width: 250px;
+    height: auto; /* Zachování poměru stran */
+    border-radius: 10px;
+    margin-right: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    flex: 1 1 100%;
+    max-width: 100%;
+
+}
+.teacher-info div {
+    text-align: left;
+    flex: 1 1 500px;
+}
+.teacher-info div h3 {
+    font-family: 'Montserrat', sans-serif; /* Pro nadpisy */
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.teacher-info div p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+}
+
+.contact-info {
+    background-color: #007bff; /* Modrá z letáku */
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%); /* Zešikmení */
+    margin-top: 80px;
+
+}
+.contact-info h2 {
+    font-family: 'Montserrat', sans-serif; /* Pro nadpisy */
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.contact-info p {
+    font-size: 1.5em;
+    font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.ul-check li::before {
+    content: '✓';
+    color: #28a745;
+    margin-right: 10px;
+}
+.ul-check li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 992px) {
+    .course-details div {
+        flex: 1 1 100%;
+    }
+    .teacher-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .teacher-info img {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    header h1{
+        font-size: 2.5em;
+    }
+     .section h2{
+        font-size: 2.2em;
+    }
+     .contact-info h2{
+         font-size: 2.5em;
+    }
+}
+
+/* Styl pro ikony checklistu */
+.checklist-icon {
+    display: inline-block;
+    width: 24px; /* Nastavte pevnou šířku pro ikonu */
+    height: 24px; /* Nastavte pevnou výšku pro ikonu */
+    margin-right: 10px; /* Mezera mezi ikonou a textem */
+    background-size: cover; /* Zajistí, že se ikona vejde do kontejneru */
+    background-repeat: no-repeat; /* Zamezí opakování ikony */
+    vertical-align: middle; /* Zarovná ikonu s textem */
+}
+
+.checklist-item {
+    display: flex; /* Použijte flexbox pro zarovnání ikony a textu */
+    align-items: center; /* Vertikálně zarovnejte ikonu a text */
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.checkmark {
+    background-image: url("https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/check-circle-2.svg"); /* URL adresa ikony */
+}
+
+form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    margin-top: 40px;
+    max-width: 600px; /* Omezte šířku formuláře */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Zahrňte padding a border do šířky */
+}
+
+form textarea {
+    resize: vertical; /* Umožněte uživateli měnit výšku textového pole */
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Zajistěte, aby tlačítko mělo plnou šířku */
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Стиль для полей с ошибками */
+form input.error,
+form textarea.error {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+}
+
+/* Стиль для сообщения об ошибке */
+.error-message {
+    color: #dc3545;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* стилизация select */
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    -webkit-appearance: none;  /* Skryje výchozí vzhled v Chrome */
+    -moz-appearance: none;     /* Skryje výchozí vzhled ve Firefoxu */
+    appearance: none;          /* Skryje výchozí vzhled v ostatních prohlížečích */
+    background-image: url("https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/chevron-down.svg"); /* Šipka dolů */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Umístění šipky */
+    background-size: 20px; /* Velikost šipky */
+}
+
+/* Стиль для выпадающего списка при наведении */
+form select:hover {
+    border-color: #007bff;
+}
+
+/* Стиль для активного состояния выпадающего списка */
+form select:focus {
+    outline: none; /* Odstraní обводку по умолчанию */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Добавляет тень */
+}
+
+.read-more-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    width: 200px; /* увеличил ширину buttonu */
+    text-align: center;
+    margin: 20px auto 0 auto; /* vycentroval button */
+    display: block;
+}
+
+.read-more-button:hover {
+    background-color: #0056b3;
+}
+
+.hidden-text {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+.hidden-text p{
+     margin-bottom: 15px;
+}
+
+.read-more-button.expanded {
+    margin-bottom: 0;
+}
