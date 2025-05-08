@@ -342,7 +342,8 @@ form select:focus {
 }
 
 .ome {
-    display: inline-block;
+    display: flex; /* Umožní umístit potomky vedle sebe */
+    align-items: center; /* Volitelné: pro vertikální zarovnání na střed */
 }
 .alzb {
     /* Zajistí, že obrázek bude mít čtvercový tvar pro ořez do kruhu */
@@ -351,6 +352,10 @@ form select:focus {
     object-fit: cover; /* Zajistí, že se obrázek vyplní čtverec bez deformace */
     border-radius: 100%; /* Vytvoří kruhový ořez (polovina šířky/výšky) */
   }
+
+ .ome p {
+    margin: 0; /* Volitelné: pro odstranění výchozích okrajů odstavce */
+}
 
   
 
