@@ -201,8 +201,9 @@ header p {
 }
 
 .checklist-div {
-    display: block;
+    display: flex;
     text-align: center;
+
 }
 
 .checkmark {
