@@ -167,6 +167,9 @@ header p {
         margin-right: 0;
         margin-bottom: 30px;
     }
+    .checklist-item {
+        margin-left: 0;
+
 }
 @media (max-width: 768px) {
     header h1{
@@ -196,6 +199,7 @@ header p {
     align-items: center; /* Vertikálně zarovnejte ikonu a text */
     margin-bottom: 15px;
     font-size: 1.2em;
+    margin-left: 100px;
 }
 
 .checkmark {
