@@ -197,11 +197,10 @@ header p {
     align-items: center; /* Vertikálně zarovnejte ikonu a text */
     margin-bottom: 15px;
     font-size: 1.2em;
-    margin-left: 100px;
 }
 
 .checklist-div {
-    display: flex;
+    display: inline-block;
     text-align: center;
 
 }
