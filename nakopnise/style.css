@@ -82,45 +82,7 @@ header p {
 .course-details div p {
     font-size: 1.1em;
 }
- .teacher-info {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    background-color: #f8f9fa;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-.teacher-info img {
-    width: 250px;
-    height: auto; /* Zachování poměru stran */
-    border-radius: 10px;
-    margin-right: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
-    flex: 1 1 100%;
-    max-width: 100%;
-
-}
-.teacher-info div {
-    text-align: left;
-    flex: 1 1 500px;
-}
-.teacher-info div h3 {
-    font-family: 'Montserrat', sans-serif; /* Pro nadpisy */
-    font-size: 2.2em;
-    color: #2c3e50;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-.teacher-info div p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.8;
-}
+ 
 
 .contact-info {
     background-color: #007bff; /* Modrá z letáku */
