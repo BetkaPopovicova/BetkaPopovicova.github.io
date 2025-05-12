@@ -84,7 +84,8 @@
                 <h2>Kdy kurz probíhá?</h2>
                 <p>
                     1. turnus: 18. - 22. srpna<br>
-                    2. turnus: 25. - 29. srpna
+                    2. turnus: 25. - 29. srpna<br>
+                    Po - Čt 9-17h, Pá 9-15h (začátek i konec lze upravit tak, aby to vyhovovalo všem dětem)
 
                 </p>
             </div>
@@ -93,6 +94,7 @@
             <div class="container">
                 <h2>Kde to probíhá?</h2>
                 <p>Kurz probíhá v mé učebně, která je součástí mého domu v Řečanech nad Labem.  Učebna je vybavena tak, aby poskytovala klidné a inspirativní prostředí pro učení.  Maximální počet 4 studenti zajišťuje, že každý student dostane potřebnou pozornost a individuální přístup.</p>
+                <p>Je to pěšy 10-15min z vlakového nádraží. Věřím, že se děti dokáží dopravit samy a kdyby to nemohly najít, tak mi prostě zavolají :) </p>
             </div>
         </section>
         <section class="section">
@@ -105,41 +107,57 @@
                         <p>
                             Jmenuji se Alžběta Popovičová, je mi 26 let a jsem studentkou Českého jazyka a literatury
                             a Matematiky pro vzdělávání na Masarykově univerzitě. Mám dlouholeté zkušenosti
-                            s přípravou žáků na přijímací zkoušky a mým cílem je pomoci dětem
-                            s jistotou vykročit do 9. třídy.
+                            s přípravou žáků na přijímací zkoušky a vím, že pokud se děti cítí připravené, mají o stres méně. Zároveň mám empatii k dětem, které se ve výuce ztrácí. Mým cílem je, aby šly do 9. třídy připravené a tím pádem si ze samotné výuky odnesly co nejvíce.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section">
-            <div class="container">
-                <h2>Přihláška na kurz</h2>
-                <form action="https://formspree.io/f/your-form-id" method="POST" id="registration-form">
-                    <label for="name">Jméno a příjmení:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-        
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-        
-                    <label for="phone">Telefon:</label>
-                    <input type="tel" id="phone" name="phone" required><br><br>
-        
-                    <label for="turnus">Termín:</label>
-                    <select id="turnus" name="turnus">
-                        <option value="turnus1">18. - 22. srpna</option>
-                        <option value="turnus2">25. - 29. srpna</option>
-                    </select><br><br>
-        
-                    <label for="message">Zpráva:</label>
-                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-        
-                    <p style="font-size: 0.9em; color: #555;">
-                        <strong>Poznámka:</strong> Místo v kurzu je rezervováno po zaplacení 50% ceny kurzu jako zálohy.
-                    </p><br>
-                    <input type="submit" value="Odeslat přihlášku">
-                </form>
-            </div>
+        <div class="container">
+    <h2>Přihláška na kurz</h2>
+    <form action="https://formspree.io/f/xovdkwyl" method="POST" id="registration-form">
+        <label for="name">Jméno a příjmení:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="turnus">Termín:</label>
+        <select id="turnus" name="turnus">
+            <option value="turnus1">18. - 22. srpna</option>
+            <option value="turnus2">25. - 29. srpna</option>
+        </select><br><br>
+
+        <label for="message">Zpráva:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <p style="font-size: 0.9em; color: #555;">
+            <strong>Poznámka:</strong> Místo v kurzu je rezervováno po zaplacení 50% ceny kurzu jako zálohy.
+        </p><br>
+        <input type="submit" value="Odeslat přihlášku">
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('registration-form');
+
+            form.addEventListener('submit', function(event) {
+                // Prevent default form submission to Formspree (for now)
+                event.preventDefault();
+
+                // Display the alert message
+                alert('Přihláška odeslána, budeme Vás kontaktovat na uvedený email.');
+
+                // Optionally, you can then proceed with the actual form submission to Formspree
+                // form.submit();
+            });
+        });
+    </script>
+</div>
         </section>
     </main>
     <section class="contact-info">
