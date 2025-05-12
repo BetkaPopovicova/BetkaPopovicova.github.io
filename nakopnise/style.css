@@ -167,8 +167,6 @@ header p {
         margin-right: 0;
         margin-bottom: 30px;
     }
-    .checklist-item {
-        margin-left: 0;
 
 }
 @media (max-width: 768px) {
@@ -200,6 +198,11 @@ header p {
     margin-bottom: 15px;
     font-size: 1.2em;
     margin-left: 100px;
+}
+
+.checklist-div {
+    display: block;
+    text-align: center;
 }
 
 .checkmark {
