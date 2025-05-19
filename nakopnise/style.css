@@ -14,9 +14,9 @@ body {
 }
 
  header {
-            background-image: url('Nakopni se!.png');
+            background-image: url('pattern\ white\ background\ blue\ pictures\ math\ book\ lamp\ study.jpg');
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             /* Další styly pro header (výška, barva textu atd.) */
             padding: 20px 0; /* Přidá padding kolem obsahu headeru */
         }
@@ -319,7 +319,7 @@ form select:focus {
 }
 
 .info p {
-    max width: 600px; 
+    max-width: 600px; 
 }
 
 .info {
