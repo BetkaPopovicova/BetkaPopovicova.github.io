@@ -13,6 +13,14 @@ body {
     padding: 0 20px;
 }
 
+ header {
+            background-image: url('Nakopni se!.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* Další styly pro header (výška, barva textu atd.) */
+            padding: 20px 0; /* Přidá padding kolem obsahu headeru */
+        }
+
 header h1 {
     font-family: 'Montserrat', sans-serif; /* Pro nadpisy */
     font-size: 3.5em; /* Větší nadpis */
@@ -318,10 +326,3 @@ form select:focus {
     display: inline-block;
 }
 
- header {
-            background-image: url('Nakopni se!.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            /* Další styly pro header (výška, barva textu atd.) */
-            padding: 20px 0; /* Přidá padding kolem obsahu headeru */
-        }
