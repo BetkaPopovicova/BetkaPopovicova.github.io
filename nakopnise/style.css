@@ -323,3 +323,11 @@ form select:focus {
 .info {
     display: inline-block;
 }
+
+ header {
+            background-image: url('Nakopni se!.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* Další styly pro header (výška, barva textu atd.) */
+            padding: 20px 0; /* Přidá padding kolem obsahu headeru */
+        }
