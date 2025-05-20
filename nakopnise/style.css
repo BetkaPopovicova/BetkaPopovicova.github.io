@@ -23,7 +23,7 @@ body {
     display: flex; /* Použijeme flexbox pro vertikální centrování */
     align-items: center; /* Vertikálně centruje obsah */
     justify-content: center; /* Horizontálně centruje obsah */
-    color: white; /* Barva textu pro kontrast s pozadím */
+    color: #333; /* Barva textu pro kontrast s pozadím */
     text-align: center;
     max-width: auto; /* Pro širší obsah */
     margin: 0 auto;
