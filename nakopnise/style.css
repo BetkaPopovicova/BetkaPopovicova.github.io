@@ -45,6 +45,19 @@ header p {
     line-height: 1.8;
     /* color: white; - lze nastavit globálně v .header, pokud je text světlý */
 }
+
+.zahlavi {
+     background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center; /* Zarovnání textu a MathJaxu */
+}
 .section {
     padding: 80px 0;
     text-align: center;
