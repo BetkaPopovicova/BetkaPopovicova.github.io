@@ -14,8 +14,8 @@ body {
 }
 
 .header-s-gradientem {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1)),
-                      url('pattern\ white\ background\ blue\ pictures\ math\ book\ lamp\ study.jpg');
+    background-image:
+                      url('pozadi.png');
     background-size: auto, cover; /* Gradient se přizpůsobí, obrázek pokryje */
     background-repeat: no-repeat, repeat; /* Gradient se opakuje, obrázek ne */
     background-position: center, center; /* Umístění obou vrstev na střed */
