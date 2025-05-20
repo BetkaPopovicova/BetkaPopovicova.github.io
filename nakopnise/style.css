@@ -16,14 +16,18 @@ body {
 .header { /* Styly se nyní aplikují na <header class="header"> */
     background-image: url('pozadi.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
-    padding: 20px 0;
+    padding: 20px 20px;
     min-height: 300px; /* Dobré přidat, aby byl header vždy viditelný */
     display: flex; /* Použijeme flexbox pro vertikální centrování */
     align-items: center; /* Vertikálně centruje obsah */
     justify-content: center; /* Horizontálně centruje obsah */
     color: white; /* Barva textu pro kontrast s pozadím */
+    text-align: center;
+    max-width: auto; /* Pro širší obsah */
+    margin: 0 auto;
+    
 }
 
 /* Styly pro nadpisy a odstavce by pak mohly být jen takto: */
