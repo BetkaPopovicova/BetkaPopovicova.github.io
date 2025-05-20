@@ -13,14 +13,13 @@ body {
     padding: 0 20px;
 }
 
-.header-s-gradientem {
-    background-image:
-                      url('pozadi.png');
-    background-size: auto, cover; /* Gradient se přizpůsobí, obrázek pokryje */
-    background-repeat: no-repeat, repeat; /* Gradient se opakuje, obrázek ne */
-    background-position: center, center; /* Umístění obou vrstev na střed */
+.header {
+    background-image: url('pozadi.png'); /* Pouze tvůj obrázek */
+    background-size: cover;             /* Obrázek pokryje celou plochu headeru */
+    background-repeat: no-repeat;       /* Obrázek se nebude opakovat */
+    background-position: center;        /* Obrázek bude vycentrován */
     padding: 20px 0;
-    /* Další styly pro header */
+    /* Další styly pro header (např. min-height pro zajištění viditelné výšky, barva textu atd.) */
 }
 
 header h1 {
