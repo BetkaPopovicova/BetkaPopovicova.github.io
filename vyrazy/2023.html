@@ -285,6 +285,34 @@
                 </p>
             </div>
         </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+               $n \cdot (2n - 1) - (-2n - n) \cdot (3n + 2) + (1 - 2n) \cdot (1 + 2n)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton13" onclick="zobrazReseni('reseni13', 'zobrazReseniButton13')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni13" style="display: none;">
+                <br>
+                <p> 
+                    můžu a nemusím použív vzoreček $\color{red} a^2 - b^2 = (a - b)(a + b)$<br>
+                    já ho nepoužiji a budu řešit klasickým roznásobováním závorek <br>
+                    $n \cdot (2n - 1) - ({\color{\blue}\,-\,2n\,-\,n}) \cdot (3n + 2) + (1 - 2n) \cdot (1 + 2n)$ 
+                    $= 2n^2 - n - (- 3n) \cdot (3n + 2) + 1 + 2n - 2n - 4n^2$ 
+                    $= 2n^2 - n + 3n \cdot (3n + 2) + 1 + 2n - 2n - 4n^2$ 
+                    $= 2n^2 - n + 9n^2 + 6n + 1 + 2n - 2n - 4n^2$ 
+                    $= {\color{green}2n^2} {\color{blue}\,-\,n} + {\color{green}9n^2} + {\color{blue}6n} + 1 + {\color{blue}2n\,-\,2n} {\color{green}\,-\,4n^2}$ 
+                    $= 7n^2 + 5n + 1$ 
+
+
+
+                </p>
+            </div>
+        </div>
     </main>
  <footer>
         <div class="container">
