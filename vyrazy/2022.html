@@ -98,14 +98,12 @@
                 <br>
                 <p>
                     musím si dát pozor na minus před násobením závorek<br>
-                    vyreším to například vyřešením závorky <br>
+                    vyreším to například přidáním závorky <br>
                     $(4 + 3n) \cdot ({\color{blue}3n\,-\,2n}) - (5n^2 - 5n)$ 
                     $= (4 + 3n) \cdot (n) - 5n^2 + 5n$ 
                     $= 4n + 3n^2 - 5n^2 + 5n$ 
                     $= {\color{blue}4n} + {\color{red}3n^2\,-\,5n^2} + {\color{blue}5n}$ 
                     $= -2n^2 + 9n$
-
-
                 </p>
             </div>
         </div>
@@ -114,10 +112,10 @@
         </section>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Upravte a rozložte na součin vytknutím
             </p>
             <p>
-                
+                $x \cdot x - x + 2x^2$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
@@ -126,16 +124,18 @@
             <div id="reseni4" style="display: none;">
                 <br>
                 <p>
-                    
+                $x \cdot x - x + 2x^2 = x^2 - x + 2x^2 = {\color{red}x^2} - x + {\color{red}2x^2}$ 
+                $= 3x^2 - x$ 
+                $= x (3x - 1)$ 
                 </p>
             </div>
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                 Umocněte a zjednodušte (výsledný výraz nesmí obsahovat závorky)
             </p>
             <p>
-                
+               $(5b - 0,4a)^2$ 
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton5" onclick="zobrazReseni('reseni5', 'zobrazReseniButton5')">Zobraz řešení</button>
@@ -144,7 +144,15 @@
             <div id="reseni5" style="display: none;">
                 <br>
                 <p>
-                    
+                použijeme vzoreček $\color{red} (a - b)^2 = a^2 - 2ab + b^2$<br> 
+                1. cesta -> umím desetinná čísla <br> 
+                $(5b - 0,4a)^2 = 25b^2 - 2 \cdot 5b \cdot 0,4a + 0,16a^2$ 
+                $= 25b^2 - 10b \cdot 0,4a + 0,16a^2$ 
+                $= 25b^2 - 4ab + 0,16a^2$ <br> 
+                2. cesta -> převedením na zlomek <br> 
+                $$ \left( 5b - \frac{4}{10} \right)^2 = \left( 5b - \frac{2}{5} \right)^2$$
+                $$= 25b^2 - 2 \cdot 5b \cdot \frac{2}{5} + \frac{4}{25} = 25b^2 - \frac{2}{1} \cdot \frac{5b}{1} \cdot \frac{2}{5} + \frac{4}{25}$$ 
+                $$= 25b^2 - \frac{25b}{5} + \frac{4}{25}$$ 
                 </p>
             </div>
         </div>
