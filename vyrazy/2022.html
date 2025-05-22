@@ -45,7 +45,7 @@
 
         <div class="matematicky-vyraz">
             <p class="explanation">
-                Z daného výrazu vytkněte $3y$
+                Z daného výrazu vytkněte 3y
             </p>
             <p>
               $3y^2 - 9y + 6xy$
@@ -85,10 +85,10 @@
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
             </p>
             <p>
-               
+               $(4 + 3n) \cdot (3n - 2n) - (n - 1) \cdot 5n$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
@@ -97,7 +97,15 @@
             <div id="reseni3" style="display: none;">
                 <br>
                 <p>
-                    
+                    musím si dát pozor na minus před násobením závorek<br>
+                    vyreším to například vyřešením závorky <br>
+                    $(4 + 3n) \cdot ({\color{blue}3n\,-\,2n}) - (5n^2 - 5n)$ 
+                    $= (4 + 3n) \cdot (n) - 5n^2 + 5n$ 
+                    $= 4n + 3n^2 - 5n^2 + 5n$ 
+                    $= {\color{blue}4n} + {\color{red}3n^2\,-\,5n^2} + {\color{blue}5n}$ 
+                    $= -2n^2 + 9n$
+
+
                 </p>
             </div>
         </div>
