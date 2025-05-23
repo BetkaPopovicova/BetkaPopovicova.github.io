@@ -59,8 +59,58 @@ header p {
     text-align: center; /* Zarovnání textu a MathJaxu */
 }
 
+/* --- Media Queries for Mobile --- */
+
+@media (max-width: 768px) { /* Applies to screens 768px wide or less (typical tablet/mobile breakpoint) */
+    .header {
+        min-height: 200px; /* Make the header a bit shorter on mobile */
+        padding: 15px; /* Reduce padding */
+    }
+
+    header h1 {
+        font-size: 2em; /* Smaller font size for the main heading */
+    }
+
+    header p {
+        font-size: 1em; /* Smaller font size for the paragraph */
+        max-width: 90%; /* Allow paragraph to take up more width */
+    }
+
+    .zahlavi {
+        width: 95%; /* Make the white box take up more width on smaller screens */
+        padding: 15px; /* Reduce padding in the white box */
+        margin: 10px auto; /* Adjust margin */
+    }
+
+    .zahlavi h2 { /* Assuming you have an h2 inside .zahlavi */
+        font-size: 1.5em;
+    }
+
+    .zahlavi p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) { /* Applies to screens 480px wide or less (typical smartphone breakpoint) */
+    header h1 {
+        font-size: 1.8em; /* Even smaller on very small phones */
+    }
+
+    header p {
+        font-size: 0.9em; /* Even smaller paragraph text */
+    }
+
+    .zahlavi h2 {
+        font-size: 1.3em;
+    }
+
+    .zahlavi p {
+        font-size: 0.85em;
+    }
+}
+
 .poznamka {
-    background-color: grey;
+    background-color: lightgrey;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
