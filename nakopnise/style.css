@@ -93,7 +93,7 @@ header p {
 
 @media (max-width: 480px) { /* Applies to screens 480px wide or less (typical smartphone breakpoint) */
     header h1 {
-        font-size: 1.5em; /* Even smaller on very small phones */
+        font-size: 1.3em; /* Even smaller on very small phones */
     }
 
     header p {
