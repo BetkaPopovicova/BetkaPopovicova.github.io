@@ -278,7 +278,7 @@ header p {
     .checklist-icon {
         width: 18px; /* Even smaller icon */
         height: 18px; /* Even smaller icon */
-        margin-right: 15px; /* Reduced margin */
+        margin-right: 40px; /* Reduced margin */
     }
 
     .checklist-div {
