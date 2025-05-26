@@ -232,6 +232,25 @@ header p {
      .contact-info h2{
          font-size: 2.5em;
     }
+    .checklist-item {
+        /* On smaller screens, make checklist items stack and take full width */
+        flex-direction: column; /* Stack icon and text vertically */
+        align-items: flex-start; /* Align text to the left */
+        font-size: 1em; /* Smaller font size for checklist items */
+        margin-bottom: 10px; /* Reduce vertical spacing */
+        text-align: left; /* Ensure text is left-aligned */
+    }
+
+    .checklist-icon {
+        margin-bottom: 5px; /* Add a small space between icon and text when stacked */
+        margin-right: 0; /* Remove horizontal margin when stacked */
+    }
+
+    .checklist-div {
+        display: block; /* Make the checklist div a block element to take full width */
+        text-align: left; /* Align content inside to the left */
+        padding: 0 15px; /* Add some padding to prevent it from touching screen edges */
+    }
 }
 
 /* Styl pro ikony checklistu */
