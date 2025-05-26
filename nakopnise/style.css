@@ -215,7 +215,7 @@ header p {
     .teacher-info {
         flex-direction: column;
         text-align: center;
-    }
+    } 
     .teacher-info img {
         margin-right: 0;
         margin-bottom: 30px;
