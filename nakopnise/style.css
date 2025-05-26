@@ -232,22 +232,60 @@ header p {
      .contact-info h2{
          font-size: 2.5em;
     }
+}
+
+   @media (max-width: 768px) {
+    /* ... (Your existing header, zahlavi styles for 768px) ... */
+
+  
+
+    /* Revised styles for checklist on mobile */
     .checklist-item {
-        /* On smaller screens, make checklist items stack and take full width */
-        flex-direction: column; /* Stack icon and text vertically */
-        align-items: flex-start; /* Align text to the left */
+        /* Revert to row direction to keep icon and text on same line */
+        flex-direction: row;
+        align-items: center; /* Keep vertical alignment centered */
         font-size: 1em; /* Smaller font size for checklist items */
-        margin-bottom: 10px; /* Reduce vertical spacing */
+        margin-bottom: 8px; /* Slightly reduce vertical spacing between items */
         text-align: left; /* Ensure text is left-aligned */
+        padding: 0 10px; /* Add some horizontal padding to individual items */
+        justify-content: flex-start; /* Ensure items start from the left */
     }
 
     .checklist-icon {
-        margin-bottom: 5px; /* Add a small space between icon and text when stacked */
-        margin-right: 0; /* Remove horizontal margin when stacked */
+        width: 20px; /* Slightly smaller icon on mobile */
+        height: 20px; /* Slightly smaller icon on mobile */
+        margin-right: 8px; /* Maintain a smaller margin between icon and text */
+        margin-bottom: 0; /* Remove vertical margin when in a row */
     }
 
-   
+    .checklist-div {
+        display: block; /* Make the checklist div a block element to take full width */
+        max-width: 500px; /* Limit the max-width of the checklist for better readability */
+        margin: 0 auto; /* Center the checklist div */
+        padding: 0 20px; /* Add horizontal padding to the overall checklist container */
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
 }
+
+@media (max-width: 480px) {
+    /* ... (Your existing header, zahlavi styles for 480px) ... */
+
+    .checklist-item {
+        font-size: 0.9em; /* Even smaller font on very small phones */
+        margin-bottom: 5px; /* Further reduce vertical spacing */
+    }
+
+    .checklist-icon {
+        width: 18px; /* Even smaller icon */
+        height: 18px; /* Even smaller icon */
+        margin-right: 6px; /* Reduced margin */
+    }
+
+    .checklist-div {
+        padding: 0 15px; /* Slightly less padding on very small screens */
+    }
+}
+
 
 /* Styl pro ikony checklistu */
 .checklist-icon {
