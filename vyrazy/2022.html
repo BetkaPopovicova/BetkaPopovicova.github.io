@@ -248,10 +248,10 @@
         </section>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky ani znak pro odmocninu)
             </p>
             <p>
-                
+                $(10x - 8) - x \cdot \sqrt{100 - 64}$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton10" onclick="zobrazReseni('reseni10', 'zobrazReseniButton10')">Zobraz řešení</button>
@@ -260,7 +260,12 @@
             <div id="reseni10" style="display: none;">
                 <br>
                 <p>
-                   
+                   POZOR! pod odmocninou je minus, proto musím nejprve spočítat výraz pod odmocninou a až potom odmocnit <br>
+                   $= 10x - 8 - x \cdot \sqrt{36}$ 
+                   $= 10x - 8 - x \cdot 6$ 
+                   $= 10x - 8 - 6x$ 
+                   $= {\color{blue}10x} - 8 {\color{blue}\,-\,6x}$ 
+                   $= 4x - 8$ 
                 </p>
             </div>
         </div>

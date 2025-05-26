@@ -278,11 +278,11 @@ header p {
     .checklist-icon {
         width: 18px; /* Even smaller icon */
         height: 18px; /* Even smaller icon */
-        margin-right: 6px; /* Reduced margin */
+        margin-right: 15px; /* Reduced margin */
     }
 
     .checklist-div {
-        padding: 0 15px; /* Slightly less padding on very small screens */
+        padding: 0 5px; /* Slightly less padding on very small screens */
     }
 }
 
