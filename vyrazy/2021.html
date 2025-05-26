@@ -139,7 +139,7 @@
             <div id="reseni5" style="display: none;">
                 <br>
                 <p>
-                    použijeme vzoreček $\color{red} (a - b)^2 = a^2 - 2ab + b^2$<br>
+                použijeme vzoreček $\color{red} (a - b)^2 = a^2 - 2ab + b^2$<br>
                 $\left(y - \frac{1}{2}\right)^2 = y^2 - 2 \cdot y \cdot \frac{1}{2} + \frac{1}{4}$
                 $= y^2 - {\cancel{\color{blue}2}} \cdot y \cdot \frac{1}{\cancel{\color{blue}2}} + \frac{1}{4}$
                 $= y^2 - y + \frac{1}{4}$
@@ -148,10 +148,10 @@
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Zjednodušte a rozložte podle vzorce (výsledný výraz uveďte ve tvaru součinu)
             </p>
             <p>
-                
+                $5^2 - (a^2 + 16)$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton6" onclick="zobrazReseni('reseni6', 'zobrazReseniButton6')">Zobraz řešení</button>
@@ -160,7 +160,11 @@
             <div id="reseni6" style="display: none;">
                 <br>
                 <p>
-                    
+                $= 25 - a^2 - 16$
+                $= {\color{red}25} - a^2 {\color{red}\,-\,16}$ 
+                $= 9 - a^2$ <br>
+                použiji vzoreček $\color{red} a^2 - b^2 = (a - b)(a + b)$<br>
+                $= 9 - a^2 = (3 + a) (3 - a)$
                 </p>
             </div>
         </div>
@@ -169,10 +173,10 @@
         </section>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Rozložte podle vzorce (výsledný výraz uveďte ve tvaru součinu)
             </p>
             <p>
-                
+                $(4 \cdot a)^2 - 81$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton7" onclick="zobrazReseni('reseni7', 'zobrazReseniButton7')">Zobraz řešení</button>
@@ -181,16 +185,20 @@
             <div id="reseni7" style="display: none;">
                 <br>
                 <p>
-                   
+                   na začátku se jedná o násobení, není to vzoreček a můžu použít pravidlo pro mocniny <br>
+                   $= 4^2 \cdot a^2 - 81$ 
+                   $= 16a^2 - 81$ 
+                   nyní se jedná o vzoreček $\color{red} a^2 - b^2 = (a - b)(a + b)$<br> 
+                   $ 16a^2 - 81 = (4a - 9) (4a + 9)$
                 </p>
             </div>
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky) 
             </p>
             <p>
-                
+                $2 \cdot (3y - x) \cdot (5 - y)$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton8" onclick="zobrazReseni('reseni8', 'zobrazReseniButton8')">Zobraz řešení</button>
@@ -199,16 +207,21 @@
             <div id="reseni8" style="display: none;">
                 <br>
                 <p>
-                    
+                    1. cesta -> 2 vynásobím první závorku<br>
+                    $= (6y - 2x) \cdot (5 - y)$
+                    $= 30y - 6y^2 - 10x + 2xy$<br>
+                    2. cesta -> nejprve závorky, potom vynásobím 2<br>
+                    $= 2 \cdot (15y - 3y^2 - 5x + xy)$ 
+                    $= 30y - 6y^2 - 10y + 2xy$
                 </p>
             </div>
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
             </p>
             <p>
-                
+                $(4n+1)^2 + 3 \cdot (n-1) - (3n+n) \cdot 2n$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton9" onclick="zobrazReseni('reseni9', 'zobrazReseniButton9')">Zobraz řešení</button>
@@ -217,7 +230,12 @@
             <div id="reseni9" style="display: none;">
                 <br>
                 <p>
-                    
+                použijeme vzoreček $\color{red} (a + b)^2 = a^2 + 2ab + b^2$<br> 
+                $= 16n^2 + 2 \cdot 4n \cdot 1 + 1 + 3n - 3 - ({\color{blue}3n + n}) \cdot 2n$
+                $= 16n^2 + 8n + 1 + 3n - 3 - 4n \cdot 2n$ 
+                $= 16n^2 + 8n + 1 + 3n - 3 - 8n^2$ 
+                $= {\color{green}16n^2} + {\color{red}8n} + {\color{blue}1} + {\color{red}3n} {\color{red}\,-\,3} {\color{green}\,-\,8n^2}$ 
+                $= 8n^2 + 11n - 2$ 
                 </p>
             </div>
         </div>
