@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Výrazy 2020</title>
+    <link rel="stylesheet" href="vyrazystyle.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                packages: {'[+]': ['base', 'ams', 'cancel', 'color']}
+            },
+        };
+        function zobrazReseni(reseniId, zobrazReseniButtonId) {
+            var reseni = document.getElementById(reseniId);
+            var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
+
+            if (reseni.style.display === "none") {
+                reseni.style.display = "block";
+                zobrazReseniButton.textContent = "Skrýt řešení";
+            } else {
+                reseni.style.display = "none";
+                zobrazReseniButton.textContent = "Zobraz řešení";
+            }
+        }
+
+        function zobrazVideoReseni() {
+            alert("Video řešení bude brzy dostupné.");
+        }
+    </script>
+   <script id="MathJax-script" async
+   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+ </script>
+</head>
+<body>
+    <header>
+        <h1>Výrazy s proměnnou 2020</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Řádný termín</h2>
+        </section>
+
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Rozložte na součin
+            </p>
+            <p>
+              $p^2 - 16$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni1" style="display: none;">
+                <br>
+                <p>
+            použiji vzoreček $\color{red}a^{2}\,-\,b^{2} = (a\,+\,b)\,\cdot\,(a\,-\,b)$ <br>
+              $p^2 - 16 = (p+4) (p-4)$
+
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Umocněte a zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+               $(2x + 5)^2$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni2" style="display: none;">
+                <br>
+                <p>
+                $\color{red}(a + b)^2 = a^2 + 2 \cdot a \cdot b + b^2$<br>
+                $(2x + 5)^2 = 4x^2 + 2 \cdot 2x \cdot 5 + 25$
+                    $= 4x^2 + 20x + 25$
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+               $(2n + 6) \cdot (4n - 5) + (3 - 5) \cdot 2n - 5n \cdot (n - 2n)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni3" style="display: none;">
+                <br>
+                <p>
+                    $= 8n^2 - 10n + 24n - 30 + ({\color{blue}\,3\,-\,5}) \cdot 2n - 5n \cdot ({\color{green}\,n\,-\,2n})$ 
+                    $= 8n^2 - 10n + 24n - 30 + ({\color{blue}\,-\,2}) \cdot 2n - 5n \cdot ({\color{green}\,-\,n})$  
+                    $= 8n^2 - 10n + 24n - 30 - 4n + 5n^2$ 
+                    $= {\color{red}8n^2}{\color{brown}\,-\,10n\,+\,24n} - 30 {\color{brown}\,-\,4n} + {\color{red}5n^2}$ 
+                    $= 13n^2 + 10n - 30$ 
+                </p>
+            </div>
+        </div>
+        <section>
+            <h2>Ilustrační test</h2>
+        </section>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+                $\left(\frac{x}{3} + \frac{3}{2}\right)^2$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni4" style="display: none;">
+                <br>
+                <p>
+                     $\color{red}(a + b)^2 = a^2 + 2 \cdot a \cdot b + b^2$<br> 
+                     $\left(\frac{x}{3} + \frac{3}{2}\right)^2 = \frac{x^2}{9} + 2 \cdot \frac{x}{3} \frac{3}{2} + \frac{9}{4}$
+                    $= \frac{x^2}{9} + \frac{\cancel{\color{blue}2}}{1} \cdot \frac{x}{\cancel{\color{green}3}} \frac{\cancel{\color{green}3}}{\cancel{\color{blue}2}} + \frac{9}{4}$ 
+                    $= \frac{x^2}{9} + x + \frac{9}{4}$
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+                $5a \cdot (0,4b - 2a + 3)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton5" onclick="zobrazReseni('reseni5', 'zobrazReseniButton5')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni5" style="display: none;">
+                <br>
+                <p>
+                    $2ab - 10a^2 + 15a$
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+                $(4 + n) \cdot (4 - n) + (3n - 2) \cdot (-3)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton6" onclick="zobrazReseni('reseni6', 'zobrazReseniButton6')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni6" style="display: none;">
+                <br>
+                <p>
+                    použiji vzoreček $\color{red}a^{2}\,-\,b^{2} = (a\,+\,b)\,\cdot\,(a\,-\,b)$ <br>
+                    $16 - n^2 - 9n + 6 = -n^2 - 9n + 22$
+                </p>
+            </div>
+        </div>
+            </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="dynamic-year"></span> Připrav se na Přijímačky</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('dynamic-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
