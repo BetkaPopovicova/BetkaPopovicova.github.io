@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Výrazy 2019</title>
+    <link rel="stylesheet" href="vyrazystyle.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                packages: {'[+]': ['base', 'ams', 'cancel', 'color']}
+            },
+        };
+        function zobrazReseni(reseniId, zobrazReseniButtonId) {
+            var reseni = document.getElementById(reseniId);
+            var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
+
+            if (reseni.style.display === "none") {
+                reseni.style.display = "block";
+                zobrazReseniButton.textContent = "Skrýt řešení";
+            } else {
+                reseni.style.display = "none";
+                zobrazReseniButton.textContent = "Zobraz řešení";
+            }
+        }
+
+        function zobrazVideoReseni() {
+            alert("Video řešení bude brzy dostupné.");
+        }
+    </script>
+   <script id="MathJax-script" async
+   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+ </script>
+</head>
+<body>
+    <header>
+        <h1>Výrazy s proměnnou 2019</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>1. řádný termín</h2>
+        </section>
+
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+              $(3a - 2) \cdot (-2a)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni1" style="display: none;">
+                <br>
+                <p>
+                   $= - 6a^2 + 4a$
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+               $(3x - 4)^2$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni2" style="display: none;">
+                <br>
+                <p>
+                    použiji vzoreček $\color{red}(a - b)^2 = a^2 - 2 \cdot a \cdot b + b^2$<br>
+                    $(3x - 4)^2 = 9x^2 - 2 \cdot 3x \cdot 4 + 16 = 9x^2 - 24x + 16$
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+               $(2 + n) \cdot (3n - 3) + (3n - n) \cdot 2 - n \cdot (3 - 5)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni3" style="display: none;">
+                <br>
+                <p>
+                $= (2 + n) \cdot (3n - 3) + ({\color{blue}3n\,-\,n}) \cdot 2 - n \cdot ({\color{green}3\,-\,5})$ 
+                $= (2 + n) \cdot (3n - 3) + ({\color{blue}2n}) \cdot 2 - n \cdot ({\color{green}-\,2})$ 
+                $= 6n - 6 + 3n^2 - 3n + 4n + 2n$
+                $= {\color{blue}6n} - 6 + {\color{green}3n^2} {\color{blue}-\,3n\,+\,4n\,+\,2n}$ 
+                $= 3n^2 + 9n - 6$
+                </p>
+            </div>
+        </div>
+        <section>
+            <h2>2. řádný termín</h2>
+        </section>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+                $(2a + 3b)^2$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni4" style="display: none;">
+                <br>
+                <p>
+                     použiji vzoreček $\color{red}(a + b)^2 = a^2 + 2 \cdot a \cdot b + b^2$<br> 
+                     $(2a + 3b)^2 = 4a^2 + 2 \cdot \2a \cdot 3b + 9b^2$ 
+                     $= 4a^2 + 12ab + 9b^2$
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                Zjednodušte (výsledný výraz nesmí obsahovat závorky)
+            </p>
+            <p>
+               $3e \cdot (2 - f) - 2f \cdot (e - 3f)$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton5" onclick="zobrazReseni('reseni5', 'zobrazReseniButton5')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni5" style="display: none;">
+                <br>
+                <p>
+                    $= 6e - 3ef - 2ef + 6f^2$ 
+                    $= 6e {\color{blue}\,-\,3ef\,-\,2ef} + 6f^2$  
+                    $= 6e - 5ef + 6f^2$
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <p>
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton6" onclick="zobrazReseni('reseni6', 'zobrazReseniButton6')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni6" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+        <section>
+            <h2>1. náhradní termín</h2>
+        </section>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <p>
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton7" onclick="zobrazReseni('reseni7', 'zobrazReseniButton7')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni7" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <p>
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton8" onclick="zobrazReseni('reseni8', 'zobrazReseniButton8')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni8" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <p>
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton9" onclick="zobrazReseni('reseni9', 'zobrazReseniButton9')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni9" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+        <section>
+            <h2>2. náhradní termín</h2>
+        </section>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <p>
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton10" onclick="zobrazReseni('reseni10', 'zobrazReseniButton10')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni10" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+               
+            </p>
+            <p>
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton11" onclick="zobrazReseni('reseni11', 'zobrazReseniButton11')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni11" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <p>
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton12" onclick="zobrazReseni('reseni12', 'zobrazReseniButton12')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni12" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="dynamic-year"></span> Připrav se na Přijímačky</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('dynamic-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
