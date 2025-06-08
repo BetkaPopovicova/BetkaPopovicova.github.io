@@ -78,8 +78,7 @@ footer {
     line-height: 1.6;
 }
 
-mjx-container {
-    display: inline-block;
+mjx-container { 
     width: auto;
     max-width: 100%;
     height: auto;
