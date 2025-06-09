@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="rovnicestyle.css">
     <script>
         window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'] , ['\\(', '\\)']],
-                packages: {'[+]': ['base', 'ams', 'cancel', 'color']}
-            },
-        };
+        tex: {
+            inlineMath: [['$', '$'] , ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']], // Doporučuji mít i displayMath
+            processEscapes: true, // Doporučuji pro escapování dolarů, pokud je potřebujete
+            packages: {'[+]': ['base', 'ams', 'cancel', 'color', 'array']} // Zde jsem přidal 'array'
+        },
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process'
+        }
+    };
         function zobrazReseni(reseniId, zobrazReseniButtonId) {
             var reseni = document.getElementById(reseniId);
             var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
