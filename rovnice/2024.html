@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rovnice 2024</title>
-    <link rel="stylesheet" href="vyrazystyle.css">
+    <link rel="stylesheet" href="rovnicestyle.css">
     <script>
         window.MathJax = {
             tex: {
@@ -35,20 +35,20 @@
 </head>
 <body>
     <header>
-        <h1>Rovnice 2024</h1>
-        <p>
-            V záznamovém archu uveďte v obou částech úlohy celý postup řešení (zkoušku nezapisujte). 
-        </p>
+        <h1>Rovnice 2024</h1> 
     </header>
 
     <main class="container">
         <section>
             <h2>1. řádný termín</h2>
+            <p>
+            V záznamovém archu uveďte v obou částech úlohy celý postup řešení (zkoušku nezapisujte). 
+            </p>
         </section>
 
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                $-2 \cdot (x + 4) - 3 \cdot (x + 1)^2 = x \cdot (2 - 3x)$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
@@ -57,7 +57,20 @@
             <div id="reseni1" style="display: none;">
                 <br>
                 <p>
-                   
+                   objevuje se zde vzoreček $\color{red} (a + b)^2 = a^2 + 2ab + b^2$ <br>
+                   před vzorečkem je minus 3, vyřeším to závorkou <br> 
+                   $
+                   \begin{aligned}
+                    -2 \cdot (x + 4) - 3 \cdot (x^2 + 2x + 1) &= x \cdot (2 - 3x) \phantom{\Big/} \\ 
+                    -2x - 8 - 3x^2 - 6x - 3 &= 2x - 3x^2 \quad \Big/ + 3x^2 \\ 
+                    - 8x - 11 &= 2x \quad \Big/ - 2x \\
+                    - 10x - 11 &= 0 \quad \Big/ + 11 \\ 
+                    - 10x &= 11 \quad \Big/ : (-10) \\ 
+                    x &= - \frac{11}{10} \\ 
+                    \text{nebo} \\ 
+                    x &= - 1,1 
+                   \end{aligned} 
+                   $
                 </p>
             </div>
         </div>
