@@ -172,7 +172,9 @@
         </section>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                $$
+                \left(x + \frac{1}{2}x\right) \cdot 2 = \left(x + \frac{1}{6}x\right) \cdot 2 + 6
+                $$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton5" onclick="zobrazReseni('reseni5', 'zobrazReseniButton5')">Zobraz řešení</button>
@@ -181,7 +183,17 @@
             <div id="reseni5" style="display: none;">
                 <br>
                 <p>
-                   
+                   nejprve roznásobím závorky <br> 
+                   $$
+                   \begin{aligned}
+                   2x + \frac{1}{\cancel{\color{red}2}}x \cdot \frac{\cancel{\color{red}2}}{1} &= 2x + \frac{1}{\cancel{\color{blue}6}}x \cdot \frac{\cancel{\color{blue}2}}{1} + 6 \phantom{\Big/} \\ 
+                   2x + x &= 2x + \frac{1}{3}x + 6 \quad \Big/ \cdot 3 \\
+                   6x + 3x &= 6x + x + 18 \phantom{\Big/} \\ 
+                   9x &= 7x + 18 \quad \Big/ - 7x \\ 
+                   2x &= 18 \quad \Big/ : 2 \\
+                   x &= 9 
+                   \end{aligned} 
+                   $$
                 </p>
             </div>
         </div>
