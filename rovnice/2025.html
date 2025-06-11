@@ -261,8 +261,8 @@
                 <p>
                    nejprve roznásobím závorku<br>
                    $5 \cdot 0,04 -> 5 \cdot 4 = 20$ mám tam 2 obloučky$ -> 0,2$<br>
-                   $5 \cdot 3,2 -> $ použiji fígl$ 5 = 10 : 2 -> 10 \cdot 3,2 = 32 : 2 = 16$<br>
-                   jiný způsob $5 \cdot 3,2 -> 5 \cdot 3 = 15; 5 \cdot 0,2 = 1; 15 + 1 = 16$ <br>
+                   $5 \cdot 3,2 -> $ použiji fígl $ 5 = 10 : 2 -> 10 \cdot 3,2 = 32 : 2 = 16$<br>
+                   jiný způsob: $5 \cdot 3,2 -> 5 \cdot 3 = 15; 5 \cdot 0,2 = 1; 15 + 1 = 16$ <br>
                    celá rovnice je tedy tvaru: <br>
                    $ 
                    \begin{aligned} 
@@ -305,6 +305,7 @@
                 3x - y &= 11 \\
                 - 2x + y &= - 9 \\
                 \hline
+                \\
                 \end{aligned} 
                 $ <br>
                 obě soustavy sečtu a ypsilon nám vypadne<br>
@@ -319,6 +320,98 @@
                 \end{aligned} 
                 $
              </p>
+            </div>
+        </div>
+         <section>
+            <h2>Přijímačky nanečisto</h2>
+            <p>
+                V záznamovém archu uveďte v obou částech úlohy celý postup řešení (zkoušku nezapisujte). 
+            </p>
+        </section> 
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+               $$
+               \frac{1}{5}y + \frac{1}{2} = 2 \cdot \left(y + \frac{1}{4}\right)
+                $$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton12" onclick="zobrazReseni('reseni12', 'zobrazReseniButton12')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni12" style="display: none;">
+                <br>
+                <p>
+                    nejprve roznásobím závorku <br>
+                    $$
+                    \begin{aligned} 
+                    \frac{1}{5}y + \frac{1}{2} &= 2y + \frac{\cancel{\color{red}2}}{1} \cdot \frac{1}{\cancel{\color{red}4}} \phantom{\Big/} \\ 
+                    \frac{1}{5}y + \frac{1}{2} &= 2y + \frac{1}{2} \quad \Big/ \cdot 10 \\ 
+                    2y + 5 &= 20y + 5 \quad \Big/ - 5 \\
+                    2y &= 20y \quad \Big/ - 2y \\ 
+                    0 &= 18y \quad \Big/ : 18 \\ 
+                    0 &= y
+                    \end{aligned}
+                    $$
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                $$
+                \begin{aligned}
+                3x + \frac{3}{4}y &= 1 \\
+                3,5y + 3x &= 6,5\\
+                \hline
+                \end{aligned}
+                $$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton13" onclick="zobrazReseni('reseni13', 'zobrazReseniButton13')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni13" style="display: none;">
+                <br>
+                <p>
+                $$
+                \begin{aligned}
+                3x + \frac{3}{4}y &= 1 \quad / \cdot 4 \\
+                3,5y + 3x &= 6,5 \quad / \cdot 10 
+                \hline 
+                \\
+                12x + 3y &= 4 \\ 
+                30x + 35y &= 65 \quad / : 5 \\
+                \hline
+                \\
+                12x + 3y &= 4 \\ 
+                6x + 7y &= 13 \quad \cdot (-2) \\
+                \hline
+                \\
+                12x + 3y &= 4 \\ 
+                - 12y - 14y &= - 26 \\
+                \hline
+                \\
+                \end{aligned}
+                $$ <br>
+                obě soustavy sečtu a x nám vypadne <br> 
+                $
+                \begin{aligned} 
+                - 11y &= - 22 \quad / : (- 11) \\
+                y &= 2\\
+                \\
+                \end{aligned} 
+                $ 
+                dosadím zpátky do libovlné rovnice <br>
+                $
+                \begin{aligned} 
+                12x + 3y &= 4; \quad y = 2 \\ 
+                12x + 3 \cdot (2) &= 4 \\ 
+                12x + 6 &= 4 \quad / - 6 \\ 
+                12x &= -2 \quad / :12 \\ 
+                x &= -\frac{2}{12} \\
+                x &= -\frac{1}{6}
+                \end{aligned} 
+                $
+                </p>
             </div>
         </div>
     </main>
