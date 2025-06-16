@@ -138,7 +138,9 @@
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                $$
+                3 \cdot \frac{2y - 1}{6} = \frac{3y + 2}{8} + \frac{3}{4} \cdot \frac{y - 1}{6}
+                $$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
@@ -147,7 +149,18 @@
             <div id="reseni4" style="display: none;">
                 <br>
                 <p>
-                    
+                $$
+                \begin{aligned} 
+                \frac{\cancel{\color{red}3}}{1} \cdot \frac{2y - 1}{\cancel{\color{red}6}} &= \frac{3y + 2}{8} + \frac{\cancel{\color{blue}3}}{4} \cdot \frac{y - 1}{\cancel{\color{blue}6}} \phantom{\Big/} \\ 
+                \frac{1}{1} \cdot \frac{2y - 1}{2} &= \frac{3y + 2}{8} + \frac{1}{4} \cdot \frac{y - 1}{2} \phantom{\Big/} \\ 
+                \frac{2y - 1}{2} &= \frac{3y + 2}{8} + \frac{y - 1}{8} \quad \Big/ \cdot 8 \\ 
+                8y - 4 &= 3y + 2 + y - 1 \phantom{\Big/} \\ 
+                8y - 4 &= 4y + 1 \quad \Big/ + 4 \\ 
+                8y &= 4y + 5 \quad \Big/ - 4y \\ 
+                4y &= 5 \quad \Big/ : 4 \\
+                y &= \frac{5}{4} 
+                \end{aligned} 
+                $$
                 </p>
             </div>
         </div>
