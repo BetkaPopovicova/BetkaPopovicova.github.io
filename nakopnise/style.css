@@ -91,27 +91,7 @@ header p {
     }
 }
 
-@media (max-width: 480px) { /* Applies to screens 480px wide or less (typical smartphone breakpoint) */
-    header h1 {
-        font-size: 1.45em; /* Even smaller on very small phones */
-    }
 
-    header p {
-        font-size: 0.9em; /* Even smaller paragraph text */
-    }
-
-    .zahlavi h2 {
-        font-size: 1.3em;
-    }
-
-    .zahlavi p {
-        font-size: 1em;
-    }
-
-    .checklist-icon.checkmark { 
-        display: none;
-    } 
-}
 
 .poznamka {
     background-color: lightgrey;
@@ -447,3 +427,24 @@ form select:focus {
     display: inline-block;
 }
 
+@media (max-width: 480px) { /* Applies to screens 480px wide or less (typical smartphone breakpoint) */
+    header h1 {
+        font-size: 1.45em; /* Even smaller on very small phones */
+    }
+
+    header p {
+        font-size: 0.9em; /* Even smaller paragraph text */
+    }
+
+    .zahlavi h2 {
+        font-size: 1.3em;
+    }
+
+    .zahlavi p {
+        font-size: 1em;
+    }
+
+    .checklist-icon.checkmark { 
+        display: none;
+    } 
+}
