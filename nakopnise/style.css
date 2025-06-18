@@ -108,7 +108,7 @@ header p {
         font-size: 1em;
     }
 
-    .checklist-icon { 
+    .checklist-icon.checkmark { 
         display: none;
     } 
 }
