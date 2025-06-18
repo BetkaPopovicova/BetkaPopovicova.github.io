@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rovnice 2021</title>
+    <link rel="stylesheet" href="rovnicestyle.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                packages: {'[+]': ['base', 'ams', 'cancel', 'color']}
+            },
+        };
+        function zobrazReseni(reseniId, zobrazReseniButtonId) {
+            var reseni = document.getElementById(reseniId);
+            var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
+
+            if (reseni.style.display === "none") {
+                reseni.style.display = "block";
+                zobrazReseniButton.textContent = "Skrýt řešení";
+            } else {
+                reseni.style.display = "none";
+                zobrazReseniButton.textContent = "Zobraz řešení";
+            }
+        }
+
+        function zobrazVideoReseni() {
+            alert("Video řešení bude brzy dostupné.");
+        }
+    </script>
+   <script id="MathJax-script" async
+   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+ </script>
+</head>
+<body>
+    <header>
+        <h1>Rovnice 2021</h1> 
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>1. řádný termín</h2>
+            <p>
+            V záznamovém archu uveďte v obou částech úlohy celý postup řešení (zkoušku nezapisujte). 
+            </p>
+        </section>
+
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+             $0,3 \cdot 2 - 0,5x \cdot 2 + 0,4x = x + 3,8$   
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni1" style="display: none;">
+                <br>
+                <p>
+                    $0,3 \cdot 2 => 3 \cdot 2 = 6 => \underset{\smile}{6} = 0,6$ <br> 
+                    $0,5 \cdot 5 => 5 \cdot 2 = 10 => 1\underset{\smile}{0} = 1$ <br>
+                    <br>
+                    $
+                    \begin{aligned} 
+                    0,6 - 1x + 0,4x &= x + 3,8 \quad \Big/ \cdot 10 \\ 
+                    6 - 10x + 4x &= 10x + 38 \phantom{\Big/} \\ 
+                    6 - 6x &= 10x + 38 \quad \Big/ + 6x \\ 
+                    6 &= 16x + 38 \quad \Big/ - 38 \\ 
+                    - 32 &= 16x \quad \Big/ : 16 \\ 
+                    - 2&= x 
+                    \end{aligned} 
+                    $
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                $$
+                \frac{3}{4} \cdot (4 - y) + \frac{3}{2} \cdot (y + 2) = 6 + \frac{3y}{2}
+                $$
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni2" style="display: none;">
+                <br>
+                <p>
+                   $
+                   \begin{aligned} 
+                   \frac{3}{\cancel{\color{red}4}} \cdot \frac{\cancel{\color{red}4}}{1} - \frac{3}{4}y + \frac{3}{2}y + \frac{3}{\cancel{\color{blue}2}} \cdot \frac{\cancel{\color{blue}2}}{1} &= 6 + \frac{3y}{2} \phantom{\Bigg/} \\ 
+                    \frac{3}{1} \cdot \frac{1}{1} - \frac{3}{4}y + \frac{3}{2}y + \frac{3}{1} \cdot \frac{1}{1} &= 6 + \frac{3y}{2} \phantom{\Bigg/} \\ 
+                    3 - \frac{3}{4}y + \frac{3}{2}y + 3 &= 6 + \frac{3y}{2} \quad \Bigg/ \cdot 4 \\ 
+                    12 - 3y + 6y + 12 &= 24 + 6y \phantom{\Bigg/} \\ 
+                    24 + 3y &= 24 + 6y \quad \Bigg/ - 24 \\ 
+                    3y &= 6y \quad \Bigg/ - 3y \\ 
+                    0 &= 3y \quad \Bigg/ : 3 \\ 
+                    0 &= y 
+                    \end{aligned} 
+                    $
+                </p>
+            </div>
+        </div>
+        <section>
+            <h2>2. řádný termín</h2>
+            <p>
+                V záznamovém archu uveďte v obou částech úlohy celý postup řešení (zkoušku nezapisujte). 
+            </p>
+        </section>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni3" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni4" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+        <section>
+            <h2>1. náhradní termín</h2>
+            <p>
+                V záznamovém archu uveďte v obou částech úlohy celý postup řešení (zkoušku nezapisujte). 
+            </p>
+        </section>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton5" onclick="zobrazReseni('reseni5', 'zobrazReseniButton5')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni5" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton6" onclick="zobrazReseni('reseni6', 'zobrazReseniButton6')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni6" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+        <section>
+            <h2>2. náhradní termín</h2>
+            <p>
+                V záznamovém archu uveďte v obou částech úlohy celý postup řešení (zkoušku nezapisujte). 
+            </p>
+        </section>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton7" onclick="zobrazReseni('reseni7', 'zobrazReseniButton7')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni7" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+               
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton8" onclick="zobrazReseni('reseni8', 'zobrazReseniButton8')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni8" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="dynamic-year"></span> Připrav se na Přijímačky</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('dynamic-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
