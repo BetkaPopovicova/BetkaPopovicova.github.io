@@ -48,7 +48,7 @@
 
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                $3,2 - 0,5x - 1 = 0,6 - 1,3x$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
@@ -57,13 +57,24 @@
             <div id="reseni1" style="display: none;">
                 <br>
                 <p>
-                   
+                   $
+                   \begin{aligned} 
+                   3,2 - 0,5x - 1 &= 0,6 - 1,3x \quad \Big/ \cdot 10 \\ 
+                   32 - 5x - 10 &= 6 - 13x \phantom{\Big/} \\ 
+                   22 - 5x &= 6 - 13x \quad \Big/ - 22 \\ 
+                   - 5x &= - 16 - 13x \quad \Big/ + 13x \\ 
+                   8x &= - 16 \quad \Big/ : 8 \\ 
+                   x &= - 2 
+                   \end{aligned} 
+                   $ 
                 </p>
             </div>
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-
+                $$
+                \frac{5y + 3}{8} - \frac{y}{2} = \frac{4 - y}{5} + \frac{2y - 1}{10}
+                $$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
@@ -72,19 +83,27 @@
             <div id="reseni2" style="display: none;">
                 <br>
                 <p>
-                    
+                    $
+                    \begin{aligned} 
+                    \frac{5y + 3}{8} - \frac{y}{2} &= \frac{4 - y}{5} + \frac{2y - 1}{10} \quad \Big/ \cdot 40 \\
+                    25y + 15 - 20y &= 32 - 8y + 8y - 4 \phantom{\Big/} \\ 
+                    5y + 15 &= 28 \quad \Big/ - 15 \\ 
+                    5y &= 13 \quad \Big/ : 5 \\ 
+                    y &= \frac{13}{5} 
+                    \end{aligned} 
+                    $
                 </p>
             </div>
         </div>
         <section>
-            <h2>2. řádný termín</h2>
+            <h2>Ilustrační test</h2>
             <p>
                 V záznamovém archu uveďte v obou částech úlohy celý postup řešení (zkoušku nezapisujte). 
             </p>
         </section>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                $$6x - 2 = 4 \cdot \left(x - \frac{1}{2}\right) + 2x$$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
@@ -93,13 +112,23 @@
             <div id="reseni3" style="display: none;">
                 <br>
                 <p>
-                    
+                    $
+                    \begin{aligned} 
+                    6x - 2 &= 4x - \frac{\cancel{\color{red}4}}{1} \cdot \frac{1}{\cancel{\color{red}2}} + 2x \phantom{\Big/} \\ 
+                    6x - 2 &= 4x - \frac{2}{1} \cdot \frac{1}{1} + 2x \phantom{\Big/} \\ 
+                    6x - 2 &= 4x - 2 + 2x \phantom{\Big/} \\ 
+                    6x - 2 &= 6x - 2 \quad \Big/ + 2 \\ 
+                    6x &= 6x \quad \Big/ - 6x \\ 
+                    0 &= 0
+                    \end{aligned} 
+                    $
+                    rovnice má nekonečně mnoho řešení
                 </p>
             </div>
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                $$3 - y = \frac{3}{4} \cdot (2y - 1) - 2$$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
@@ -108,7 +137,20 @@
             <div id="reseni4" style="display: none;">
                 <br>
                 <p>
-                    
+                    $
+                    \begin{aligned} 
+                    3 - y &= \frac{3}{\cancel{\color{red}4}} \cdot \frac{\cancel{\color{red}2}}{1}y - \frac{3}{4} - 2 \phantom{\Bigg/} \\
+                    3 - y &= \frac{3}{2} \cdot \frac{1}{1}y - \frac{3}{4} - 2 \phantom{\Bigg/} \\ 
+                    3 - y &= \frac{3}{2}y - \frac{3}{4} - 2 \quad \Bigg/ \cdot 4 \\ 
+                    12 - 4y &= 6y - 3 - 8 \phantom{\Big/} \\ 
+                    12 - 4y &= 6y - 11 \quad \Big/ - 6y \\
+                    12 - 10y &= - 11 \quad \Big/ - 12 \\ 
+                    - 10y &= - 23 \quad \Big/ : (-10) \\ 
+                    y &= 2,3 \phantom{\Big/} \\ 
+                    \text{nebo} \\ 
+                    y &= \frac{23}{10} 
+                    \end{aligned} 
+                    $
                 </p>
             </div>
         </div>
