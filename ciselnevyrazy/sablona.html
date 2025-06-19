@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Číselné výrazy 2025</title>
+    <link rel="stylesheet" href="rovnicestyle.css">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                packages: {'[+]': ['base', 'ams', 'cancel', 'color']}
+            },
+        };
+        function zobrazReseni(reseniId, zobrazReseniButtonId) {
+            var reseni = document.getElementById(reseniId);
+            var zobrazReseniButton = document.getElementById(zobrazReseniButtonId);
+
+            if (reseni.style.display === "none") {
+                reseni.style.display = "block";
+                zobrazReseniButton.textContent = "Skrýt řešení";
+            } else {
+                reseni.style.display = "none";
+                zobrazReseniButton.textContent = "Zobraz řešení";
+            }
+        }
+
+        function zobrazVideoReseni() {
+            alert("Video řešení bude brzy dostupné.");
+        }
+    </script>
+   <script id="MathJax-script" async
+   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+ </script>
+</head>
+<body>
+    <header>
+        <h1>Číselné výrazy 2025</h1> 
+    </header>
+
+    <main class="container">
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni1" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni2" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni3" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni4" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+  
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton5" onclick="zobrazReseni('reseni5', 'zobrazReseniButton5')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni5" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton6" onclick="zobrazReseni('reseni6', 'zobrazReseniButton6')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni6" style="display: none;">
+                <br>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+                
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton7" onclick="zobrazReseni('reseni7', 'zobrazReseniButton7')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni7" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+        <div class="matematicky-vyraz">
+            <p class="explanation">
+               
+            </p>
+            <div class="button-container">
+                <button id="zobrazReseniButton8" onclick="zobrazReseni('reseni8', 'zobrazReseniButton8')">Zobraz řešení</button>
+                <button onclick="zobrazVideoReseni()">Zobraz video řešení</button>
+            </div>
+            <div id="reseni8" style="display: none;">
+                <br>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="dynamic-year"></span> Připrav se na Přijímačky</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('dynamic-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
