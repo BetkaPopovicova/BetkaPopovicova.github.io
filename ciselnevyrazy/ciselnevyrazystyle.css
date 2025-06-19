@@ -1,5 +1,4 @@
-@import url("https://cdn.tailwindcss.com");
-
+/* Vlastní font */
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -80,7 +79,7 @@ footer {
     line-height: 1.6;
 }
 
-mjx-container { 
+mjx-container {
     max-width: 100%;
     min-height: 2.5em;
     text-align: center;
@@ -138,7 +137,7 @@ p {
   .mjx-chtml {
     line-height: 0.2 !important;
   }
-  
+
   .mjx-svg {
     line-height: 0.2 !important;
   }
