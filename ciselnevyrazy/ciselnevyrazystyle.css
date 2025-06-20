@@ -187,7 +187,7 @@ p {
         /* Samotná čára osy */
         .number-line-axis {
             position: absolute;
-            width: calc(100% - 80px + 1px); /* Stejná šířka jako dříve, kontejner se prodloužil */
+            width: calc(100% - 100px + 1px); /* Stejná šířka jako dříve, kontejner se prodloužil */
             height: 3px; /* Tloušťka osy */
             background-color: #333; /* Tmavší barva osy */
             top: 50%;
@@ -268,9 +268,7 @@ p {
             bottom: -20px; /* Posun dolů od značky, upraveno pro menší dílky */
         }
     
-        #zacatek {
-            display: none;
-        }
+      
 
         /* Responzivní úpravy pro menší obrazovky */
         @media (max-width: 600px) {
