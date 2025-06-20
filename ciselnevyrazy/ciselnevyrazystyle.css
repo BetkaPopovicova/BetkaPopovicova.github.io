@@ -236,7 +236,7 @@ p {
 
         /* Jednotlivá značka (dílek) */
         .tick-mark {
-            width: 0,5px; /* Tloušťka značky */
+            width: 1px; /* Tloušťka značky */
             height: 15px; /* Zmenšená délka značky */
             background-color: #333; /* Barva značky */
             margin: 0;
