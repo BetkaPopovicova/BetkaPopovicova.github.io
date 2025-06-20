@@ -168,3 +168,128 @@ p {
     width: fit-content; /* Přizpůsobí se délce textu */
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Jemný stín */
 }
+
+.number-line-container {
+            position: relative;
+            width: 95%; /* Prodloužena šířka pro delší osu */
+            max-width: 1000px; /* Větší maximální šířka */
+            height: 90px; /* Výška kontejneru */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Skryje případné přečnívající části */
+            border-radius: 8px; /* Zaoblené rohy */
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Jemný stín */
+            padding: 10px 0; /* Vertikální polstrování */
+        }
+
+        /* Samotná čára osy */
+        .number-line-axis {
+            position: absolute;
+            width: calc(100% - 80px + 1px); /* Stejná šířka jako dříve, kontejner se prodloužil */
+            height: 3px; /* Tloušťka osy */
+            background-color: #333; /* Tmavší barva osy */
+            top: 50%;
+            left: 40px; /* Odstup od kraje pro začátek osy */
+            transform: translateY(-50%); /* Centruje osu vertikálně */
+            z-index: 0; /* Zajistí, že osa je pod značkami */
+        }
+
+        /* Šipka na pravém konci osy */
+        .number-line-axis::after { /* Horní část šipky */
+            content: '';
+            position: absolute;
+            right: -1px; /* Posun doprava tak, aby se dotýkalo konce osy */
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg); /* Otáčení pro horní část */
+            width: 15px; /* Délka ramene šipky */
+            height: 3px; /* Tloušťka ramene šipky */
+            background-color: #333;
+            transform-origin: 100% 50%; /* Střed otáčení: pravý konec čáry */
+        }
+        .number-line-axis::before { /* Spodní část šipky */
+            content: '';
+            position: absolute;
+            right: -1px; /* Posun doprava tak, aby se dotýkalo konce osy */
+            top: 50%;
+            transform: translateY(-50%) rotate(-45deg); /* Otáčení pro spodní část */
+            width: 15px; /* Délka ramene šipky */
+            height: 3px; /* Tloušťka ramene šipky */
+            background-color: #333;
+            transform-origin: 100% 50%; /* Střed otáčení: pravý konec čáry */
+        }
+
+        /* Kontejner pro značky */
+        .tick-marks-container {
+            position: relative;
+            width: calc(100% - 80px + 1px); /* Šířka stejná jako osa */
+            display: flex;
+            justify-content: space-between; /* Rovnoměrné rozložení dílků */
+            align-items: center;
+            z-index: 1; /* Aby byly značky nad osou */
+            height: 100%; /* Vyplní výšku kontejneru */
+            padding-top: 15px;
+            padding-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Jednotlivá značka (dílek) */
+        .tick-mark {
+            width: 2px; /* Tloušťka značky */
+            height: 15px; /* Zmenšená délka značky */
+            background-color: #333; /* Barva značky */
+            margin: 0;
+            flex-shrink: 0; /* Zabrání zmenšování značek */
+            border-radius: 1px; /* Mírně zaoblené rohy značek */
+            position: relative; /* Pro pozicování popisků */
+        }
+
+        /* Styly pro popisky */
+        .tick-label {
+            position: absolute;
+            font-size: 1rem;
+            color: #333;
+            white-space: nowrap; /* Zabrání zalamování textu */
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold; /* Tučný text pro lepší čitelnost */
+        }
+
+        /* Speciální pozicování pro '20' (nad značkou) */
+        #tick-20 .tick-label {
+            top: -20px; /* Posun nahoru od značky, upraveno pro menší dílky */
+        }
+
+        /* Speciální pozicování pro 'A', 'B', 'C' (pod značkou) */
+        #tick-A .tick-label,
+        #tick-B .tick-label,
+        #tick-C .tick-label {
+            bottom: -20px; /* Posun dolů od značky, upraveno pro menší dílky */
+        }
+
+        /* Responzivní úpravy pro menší obrazovky */
+        @media (max-width: 600px) {
+            .number-line-container {
+                height: 80px; /* Zmenšená výška pro mobily */
+                width: 98%; /* Větší šířka pro velmi malé obrazovky */
+                padding: 5px 0;
+            }
+            .number-line-axis {
+                width: calc(100% - 60px + 1px); /* Upravená šířka osy */
+                left: 30px;
+            }
+            .tick-marks-container {
+                width: calc(100% - 60px + 1px); /* Upravená šířka kontejneru pro značky */
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .tick-mark {
+                height: 12px; /* Ještě menší pro mobily */
+            }
+            .tick-label {
+                font-size: 0.8rem; /* Menší písmo pro mobily */
+                top: -15px; /* Upravené pozice popisků */
+                bottom: -15px;
+            }
+        }
