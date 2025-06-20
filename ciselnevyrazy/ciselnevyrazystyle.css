@@ -236,7 +236,7 @@ p {
 
         /* Jednotlivá značka (dílek) */
         .tick-mark {
-            width: 1px; /* Tloušťka značky */
+            width: 0,5px; /* Tloušťka značky */
             height: 15px; /* Zmenšená délka značky */
             background-color: #333; /* Barva značky */
             margin: 0;
@@ -266,6 +266,10 @@ p {
         #tick-B .tick-label,
         #tick-C .tick-label {
             bottom: -20px; /* Posun dolů od značky, upraveno pro menší dílky */
+        }
+    
+        #zacatek {
+            display: none;
         }
 
         /* Responzivní úpravy pro menší obrazovky */
