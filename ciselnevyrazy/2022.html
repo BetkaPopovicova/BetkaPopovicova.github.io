@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Číselné výrazy 2025</title>
+    <title>Číselné výrazy 2022</title>
     <link rel="stylesheet" href="ciselnevyrazystyle.css">
     <script>
         window.MathJax = {
@@ -35,13 +35,14 @@
 </head>
 <body>
     <header>
-        <h1>Číselné výrazy 2025</h1> 
+        <h1>Číselné výrazy 2022</h1> 
     </header>
 
     <main class="container">
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Vypočtěte<br>
+                $$ \frac{7^2 - \sqrt{7^2}}{\sqrt{49}} $$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton1" onclick="zobrazReseni('reseni1', 'zobrazReseniButton1')">Zobraz řešení</button>
@@ -50,13 +51,15 @@
             <div id="reseni1" style="display: none;">
                 <br>
                 <p>
-                   
+                   $$ \frac{7^2 - \sqrt{7^2}}{\sqrt{49}} = \frac{49 - \sqrt{49}}{7}$$ 
+                   $$ = \frac{49 - 7}{7} = \frac{42}{7} = 6 $$
                 </p>
             </div>
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-
+                Vypočtěte<br>
+                    $ (-6)^2 - 3 \cdot (-3) = $
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
@@ -65,14 +68,15 @@
             <div id="reseni2" style="display: none;">
                 <br>
                 <p>
-                    
+                   $ (-6)^2 - 3 \cdot (-3) = 36 + 9 = 45 $ 
                 </p>
             </div>
         </div>
 
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Vypočtěte<br>
+                $$ \frac{10^2 \cdot (10^2 - 1)}{10 \cdot 10^2 + 10^2} = $$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
@@ -81,6 +85,12 @@
             <div id="reseni3" style="display: none;">
                 <br>
                 <p>
+                    1. cesta<br>
+                    $$\frac{100 \cdot (100 - 1)}{10 \cdot 100 + 100} = \frac{100 \cdot 99}{1000 + 100} $$
+                    $$= \frac{9900}{1100} = \frac{99}{11} = 9$$<br><br> 
+                    2. cesta pomocí vytýkání<br> 
+                    $$\frac{10^2 \cdot (10^2 - 1)}{10^2 \cdot (10 + 1)} = \frac{{\cancel{\color{red}10^2}} \cdot (10^2 - 1)}{{\cancel{\color{red}}} \cdot (10 + 1)}$$ 
+                    $$ = \frac{99}{11} = 9$$
                     
                 </p>
             </div>
