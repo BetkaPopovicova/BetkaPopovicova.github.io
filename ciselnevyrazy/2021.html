@@ -52,7 +52,7 @@
                 <p>
                     1. cesta <br>
                    ptají se mě na minuty, tak si převedu 1,6h na minuty.<br>
-                   $0,6 \cdot 60 => 6 \cdot 60 = 360 => 36\underset{\smile}0 = 36min$<br>
+                   $0,6 \cdot 60 => 6 \cdot 60 = 360 => 36\underset{\smile}{0} = 36min$<br>
                    $ 1h = 60 min + 36min = 96 min$ <br> 
                    Určete, na kolik 16minutových intervalů lze rozdělit 1,6 hodiny.<br> 
                    $$ \frac{96}{16} = \frac{48}{8} = \frac{24}{4} = 6$$ <br>
@@ -64,7 +64,8 @@
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-
+                Doplňte do rámečku takové číslo, aby platila rovnost.
+                $0,3 m^2 - 52 cm^2 = \vcenter{\hbox{\LARGE$\square$}} cm^2$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton2" onclick="zobrazReseni('reseni2', 'zobrazReseniButton2')">Zobraz řešení</button>
@@ -73,14 +74,17 @@
             <div id="reseni2" style="display: none;">
                 <br>
                 <p>
-                    
+                    nejprve převedu vše na $cm^2$<br> 
+                    $0,3 m^2 = 0\underset{\smile}{3}\underset{\smile}{}\underset{\smile}\underset{\smile}{} = 3000 cm^2$ <br> 
+                    $3000 cm^2 - 52 cm^2 = 2948 cm^2$
                 </p>
             </div>
         </div>
 
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                 Doplňte do rámečku takové číslo, aby platila rovnost.
+                 $\vcenter{\hbox{\LARGE$\square$}} dm^3 - 0,04 m^3 = 250 cm^3$ 
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton3" onclick="zobrazReseni('reseni3', 'zobrazReseniButton3')">Zobraz řešení</button>
@@ -89,13 +93,23 @@
             <div id="reseni3" style="display: none;">
                 <br>
                 <p>
-                    
+                    chceme zjistit $dm^3$, tak všechno převedu na $dm^3$ <br> 
+                    $ 0,04 m^3 = 0,\underset{\smile}{0}\underset{\smile}{4}\underset{\smile}{0} = {\color{blue}40} dm^3$ <br> 
+                    $ 250 cm^3 = \underset{\smile}{2}\underset{\smile}{5}\underset{\smile}{0} = {\color{green}0,25} dm^3$<br> 
+                    nyní si čtvereček označím $x$ a mám rovnici <br> 
+                    $$
+                    \begin{aligned} 
+                    x - {\color{blue}40} &= {\color{green}0,25} \quad \Big/ + 40 \\ 
+                    x &= 40,25 
+                    \end{aligned} 
+                    $$ 
                 </p>
             </div>
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Vypočtěte 
+                $$\sqrt{\frac{16}{0,1} + 9}$$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton4" onclick="zobrazReseni('reseni4', 'zobrazReseniButton4')">Zobraz řešení</button>
@@ -104,14 +118,17 @@
             <div id="reseni4" style="display: none;">
                 <br>
                 <p>
-                    
+                    pod odmocninou je + (nebo -), proto nelze rozdělit na dvě odmocniny, nejprve musím vypočítat výraz pod odmocninou <br> 
+                    abych vyřešila zlomek s desetinným číslem, rozšířím si ho $\frac{10}{10}$<br>
+                    $$\sqrt{\frac{16}{0,1} + 9} = \sqrt{\frac{16}{0,1} \cdot \frac{10}{10} + 9} = \sqrt{\frac{160}{1} + 9}$$ 
+                    $ \sqrt{160 + 9} = \sqrt{169} = 13 $
                 </p>
             </div>
         </div>
   
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Vypočtěte, kolikrát více je polovina z 240 minut než dvě třetiny z 1 hodiny.
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton5" onclick="zobrazReseni('reseni5', 'zobrazReseniButton5')">Zobraz řešení</button>
@@ -120,13 +137,26 @@
             <div id="reseni5" style="display: none;">
                 <br>
                 <p>
-                   
+                   Vypočtěte, kolikrát více je <span style="color: #DC2626; font-weight: 600;">polovina z 240 minut</span>než <span style="color: #2563EB; font-weight: 600;">dvě třetiny z 1 hodiny</span>.<br> 
+                   <div class="cerveny-container">
+                    polovina z 240 minut $= 240 : 2 = 120$ min
+                </div>
+                <div class="modry-container">
+                    dvě třetiny z 1 hodiny: $1h = 60 min$ <br> 
+                    dvě třetiny z 60 min: $60 : 3 = 20 \cdot 2 = 40 min$
+                </div>
+                <div> 
+                    <strong>Kolikrát</strong> znamená dělení. Kolikrát <strong>více</strong> znamená, že to první bude nahoře.<br>
+                </div> 
+                $$ \frac{120}{40} = \frac{12}{4} = 3$$ 
+                odpověď: 3 <strong>krát</strong>
+                <div>nezapomenu napsat to krát, je to součástí odpovědi</div>
                 </p>
             </div>
         </div>
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Zapište zlomkem v základním tvaru, jakou část litru tvoří 30 % ze čtvrtlitru.
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton6" onclick="zobrazReseni('reseni6', 'zobrazReseniButton6')">Zobraz řešení</button>
@@ -135,14 +165,16 @@
             <div id="reseni6" style="display: none;">
                 <br>
                 <p>
-                    
+                    čtvrtlitr $= \frac{1}{4} l$ <br> 
+                    $$30\% \text{z} \frac{1}{4} = \frac{30}{100} \cdot \frac{1}{4} = \frac{3{\cancel{\color{red}0}}}{10{\cancel{\color{red}0}}} \cdot \frac{1}{4} = \frac{3}{10} \cdot \frac{1}{4} = \frac{3}{40}$$
                 </p>
             </div>
         </div>
 
         <div class="matematicky-vyraz">
             <p class="explanation">
-                
+                Vypočtěte 
+                $$\frac{0,25}{0,025} : 0,2$$
             </p>
             <div class="button-container">
                 <button id="zobrazReseniButton7" onclick="zobrazReseni('reseni7', 'zobrazReseniButton7')">Zobraz řešení</button>
@@ -151,7 +183,11 @@
             <div id="reseni7" style="display: none;">
                 <br>
                 <p>
-                   
+                   postupně si upravím a následně rozšířím, abych se zbavila desetinných čísel <br> 
+                   $$\frac{0,25}{0,025} \cdot \frac{1}{0,2}$$ 
+                   $$ = \frac{0,25}{0,025} \cdot \frac{1000}{1000} \cdot \frac{1}{0,2} \cdot \frac{10}{10}$$ 
+                   $$ = \frac{250}{25} \cdot \frac{10}{2} $$ 
+                   $$ = 10 \cdot 5 = 50$$
                 </p>
             </div>
         </div>
